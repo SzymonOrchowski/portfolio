@@ -13,13 +13,11 @@ import ContactPage from './components/ContactPage';
 import useWindowDimensions from './utils/utils';
 
 const minimalWidthToShowMenu = 1000
-let mainWidth = '100vw'
+let mainWidth
+window.innerWidth > minimalWidthToShowMenu ? mainWidth = `${window.innerWidth - 150}px` : mainWidth = '100vw'
 
 function App() {
-  useWindowDimensions().width > minimalWidthToShowMenu ? mainWidth = 'calc(100vw - 150px)' : mainWidth = '100vw'
-
   const [currentPage, setCurrentPage] = useState('WelcomePage')
-
 
   return (
     <BrowserRouter>
@@ -66,7 +64,7 @@ const Menu = styled.div`
   justify-content: space-between;
 `
 
-const Main = styled.div`
+let Main = styled.div`
   border-style: solid;
   border-color: red;
   border-width: 1px;
