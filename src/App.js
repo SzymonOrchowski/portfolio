@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Logo from './components/Logo';
 import MainMenuButton from './components/MainMenuButton';
 import MainMenu from './components/MainMenu';
@@ -11,19 +12,27 @@ import ContactPage from './components/ContactPage';
 
 function App() {
   return (
-    <div>
-      <logo>
-        <Logo />
-      </logo>
-      <menu>
-        <MainMenuButton />
-        <MainMenu />
-      </menu>
-      <main>
-        <WelcomePage />
-      </main>
-    </div>
-  );
+    <BrowserRouter>
+      <div>
+        <logo>
+          <Logo />
+        </logo>
+        <menu>
+          <MainMenuButton />
+          <MainMenu />
+        </menu>
+        <main>
+          <Routes>
+            <Route path='/' element={<WelcomePage/>} />
+            <Route path='/webdev' element={<WebDevPage/>} />
+            <Route path='/music' element={<MusicPage/>} />
+            <Route path='/discography' element={<DiscographyPage/>} />
+            <Route path='/contact' element={<ContactPage/>} />
+          </Routes>
+        </main>
+      </div>
+    </BrowserRouter>
+    );  
 }
 
 export default App;

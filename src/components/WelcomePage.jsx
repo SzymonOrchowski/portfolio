@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const WelcomePage = () => {
     return (
@@ -7,15 +8,21 @@ const WelcomePage = () => {
                 Hi, I'm Szymon Orchowski,
                 junior web developer and music producer
             </header>
-            <div>
+            <Link to='/webdev'>
+                <div>
                 My WebDev Portfolio
-            </div>
-            <div>
+                </div>
+            </Link>
+            <Link to='/music'>
+                <div>
                 My Music Portfolio
-            </div>
-            <div>
+                </div>
+            </Link>
+            <Link to='/contact'>
+                <div>
                 Contact me!
-            </div>
+                </div>
+            </Link>
         </div>
     );
 };
