@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const WelcomePage = () => {
+const WelcomePage = ({setCurrentPage}) => {
+    
+    useEffect(()=>{
+        setCurrentPage('WelcomePage')
+    },[])
+
     return (
         <div>
             <header>
@@ -20,7 +25,7 @@ const WelcomePage = () => {
             </Link>
             <Link to='/contact'>
                 <div>
-                Contact me!
+                    Contact me!
                 </div>
             </Link>
         </div>

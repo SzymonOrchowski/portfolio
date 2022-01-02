@@ -1,10 +1,39 @@
-
 body {
   margin-left: auto;
   margin-right: auto;
   width: min-content;
 }
 
-div {
-  width: min-content;
+#mainContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#menu {
+  width: 150px;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  border-style: solid;
+  border-color: blue;
+  border-width: 1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#menu-logo {
+  flex: 2
+}
+
+#menu-content {
+  flex: 6
+}
+
+#main {
+  border-style: solid;
+  border-color: red;
+  border-width: 1px;
+  width: calc(100vw - 150px);
 }

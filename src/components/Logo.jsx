@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Logo = () => {
+const Logo = ({setCurrentPage}) => {
     return (
-        <div>
+        <div onClick={(e)=>{
+            e.preventDefault();
+            setCurrentPage('WelcomePage')
+        }}>
             <Link to='/'>
                 SO
             </Link>

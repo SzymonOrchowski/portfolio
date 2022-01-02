@@ -1,10 +1,23 @@
-import React from 'react';
-import itemCard from './discographyPageComponents/itemCard';
+import React, { useEffect } from 'react';
+import ItemCard from './discographyPageComponents/ItemCard';
 
-const DiscographyPage = () => {
+const DiscographyPage = ({setCurrentPage}) => {
+
+    useEffect(()=>{
+        setCurrentPage('DiscographyPage')
+    },[])
+
     return (
         <div>
-            DiscographyPage
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
+            <ItemCard />
         </div>
     );
 };

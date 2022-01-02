@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MusicAboutMe from './musicPageComponents/MusicAboutMe';
 import MyWorks from './musicPageComponents/MyWorks';
 import MyMusic from './musicPageComponents/MyMusic';
@@ -8,7 +8,12 @@ import FilmScoring from './musicPageComponents/FilmScoring';
 import SoundDesign from './musicPageComponents/SoundDesign';
 import MusicContact from './musicPageComponents/MusicContact';
 
-const MusicPage = () => {
+const MusicPage = ({setCurrentPage}) => {
+    
+    useEffect(()=>{
+        setCurrentPage('MusicPage')
+    },[])
+
     return (
         <div>
             <header>

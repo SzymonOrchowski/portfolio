@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ContactForm from './ContactForm';
 
-const ContactPage = () => {
+const ContactPage = ({setCurrentPage}) => {
+
+    useEffect(()=>{
+        setCurrentPage('ContactPage')
+    },[])
+
     return (
         <div>
-            ContactPage
+            <header>
+                ContactPage
+            </header>
+            <ContactForm />
         </div>
     );
 };
