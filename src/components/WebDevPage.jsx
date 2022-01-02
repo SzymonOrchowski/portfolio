@@ -5,6 +5,7 @@ import Skills from './webDevPageComponents/Skills';
 import WebDevContact from './webDevPageComponents/WebDevContact';
 
 const WebDevPage = ({setCurrentPage}) => {
+    
     useEffect(()=>{
         setCurrentPage('WebDevPage')
     },[])
