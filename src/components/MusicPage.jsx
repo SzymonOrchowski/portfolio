@@ -9,16 +9,13 @@ import SoundDesign from './musicPageComponents/SoundDesign';
 import MusicContact from './musicPageComponents/MusicContact';
 
 const MusicPage = ({setCurrentPage}) => {
-    
+
     useEffect(()=>{
         setCurrentPage('MusicPage')
     },[])
 
     return (
         <div>
-            <header>
-                MusicPage
-            </header>
             <MusicAboutMe />
             <MyWorks />
             <MyMusic />

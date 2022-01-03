@@ -1,9 +1,8 @@
 import React from 'react';
 
-const MainMenuButton = () => {
+const MainMenuButton = ({fullScreenMenuIsVisible, setFullScreenMenuIsVisible}) => {
     return (
-        <div>
-            MainMenuButton
+        <div id='menu-button' onClick={() => {fullScreenMenuIsVisible ? setFullScreenMenuIsVisible(false) : setFullScreenMenuIsVisible(true)}}>
         </div>
     );
 };

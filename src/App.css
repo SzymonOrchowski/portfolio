@@ -4,36 +4,162 @@ body {
   width: min-content;
 }
 
-#mainContainer {
-  display: flex;
-  flex-direction: row;
-}
-
-#menu {
-  width: 150px;
-  height: 100vh;
-  margin: 0px;
-  padding: 0px;
-  border-style: solid;
-  border-color: blue;
-  border-width: 1px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
 #menu-logo {
   flex: 2
 }
 
 #menu-content {
-  flex: 6
+  flex: 5
 }
 
-#main {
-  border-style: solid;
-  border-color: red;
-  border-width: 1px;
-  width: calc(100vw - 150px);
+#menu-footer {
+  flex: 1
 }
+
+#menu-button {
+  position: absolute;
+  left: calc(100vw - 60px - 14px);
+  top: 14px;
+  width: 60px;
+  height: 60px;
+  background-color: magenta;
+  z-index: 2;
+}
+
+#WelcomePageContainer {
+  border-style: solid;
+  border-width: 1px;
+  border-color: blueviolet;
+  height: 100vh;
+  justify-content: center;
+}
+
+#WelcomeBox {
+  border-style: solid;
+  border-width: 1px;
+  border-color: yellowgreen;
+  margin-top: 25vh;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#welcomeBoxPortfolioButtonsBox {
+  display: flex;
+  flex-direction: row;
+}
+#welcomeBoxHeaderBox {
+  margin: 20px
+}
+#PortfolioButton {
+  border-color: violet;
+  border-style: solid;
+  border-width: 1px;
+  padding: 20px;
+  margin: 20px;
+}
+
+#ContactMeButton {
+  border-color: violet;
+  border-style: solid;
+  border-width: 1px;
+  margin: 20px;
+  padding: 20px;
+  width: 100px
+}
+
+#web-dev-container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/* WebDevAboutMe */
+
+#web-dev-about-me-container {
+  background-color: yellowgreen;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: row;
+  padding: 20px
+}
+
+@media (max-width: 1000px) {
+  #web-dev-about-me-container {
+    flex-direction: column;
+  }
+}
+
+#web-dev-about-me-content {
+  flex: 1;
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+
+#web-dev-about-me-tech {
+  flex: 1;
+  border-color: grey;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* Education */
+
+#web-dev-education-container {
+  background-color: silver;
+  margin: 0px;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px
+}
+
+#web-dev-education-container h1 {
+  margin: 10px 0px 30px 0px
+}
+
+
+/* Projects */
+
+#web-dev-projects-container {
+  margin: 0px;
+  background-color: purple;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px 20px 40px 30px
+}
+
+#web-dev-projects-container h1 {
+  margin: 10px 0px 30px 0px
+}
+
+/* Skills */
+
+#web-dev-skills-container {
+  margin: 0px;
+  background-color: lightseagreen;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px 20px 40px 30px
+}
+
+#web-dev-skills-container h1 {
+  margin: 10px 0px 30px 0px
+}
+
+/* WebDevContact */
+
+#web-dev-contact-container {
+  background-color: lightcoral;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px 20px 40px 30px
+}
+
+#web-dev-contact-container h1 {
+  margin: 0px;
+}
+

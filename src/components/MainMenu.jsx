@@ -1,27 +1,54 @@
 import React from 'react';
 
-const renderMenu = (pageName) => {
+const renderMenu = (pageName, webDevAboutMe, projects, education, skills, webDevContact, fullScreenMenuIsVisible, setFullScreenMenuIsVisible) => {
     switch(pageName) {
         case 'WelcomePage':
             return null;
         case 'WebDevPage':
             return (<>
-                <p>About Me</p>
-                <p>Projects</p>
-                <p>Skills</p>
-                <p>Contact</p>
-                </>);
+                <div onClick={() => {
+                    webDevAboutMe.current.scrollIntoView()
+                    console.log(fullScreenMenuIsVisible);
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                        About Me
+                </div>
+                <div onClick={() => {
+                    projects.current.scrollIntoView()
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                    Projects
+                </div>
+                <div onClick={() => {
+                    education.current.scrollIntoView()
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                    Education
+                </div>
+                <div onClick={() => {
+                    skills.current.scrollIntoView()
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                    Skills
+                </div>
+                <div onClick={() => {
+                    webDevContact.current.scrollIntoView()
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                    Contact
+                </div>
+                    </>);
         case 'MusicPage':
             return (<>
-                <p>About Me</p>
-                <p>My Works</p>
-                <p>My Music</p>
-                <p>My Discography</p>
-                <p>Music For Ads</p>
-                <p>Film Scoring</p>
-                <p>Sound Design</p>
-                <p>Contact</p>
-                </>);
+                <div>About Me</div>
+                <div>My Works</div>
+                <div>My Music</div>
+                <div>My Discography</div>
+                <div>Music For Ads</div>
+                <div>Film Scoring</div>
+                <div>Sound Design</div>
+                <div>Contact</div>
+                    </>);
         case 'DiscographyPage':
             return null;
         case 'ContactPage':
@@ -29,10 +56,10 @@ const renderMenu = (pageName) => {
     }
 }
 
-const MainMenu = ({currentPage}) => {
+const MainMenu = ({currentPage, webDevAboutMe, projects, education, skills, webDevContact, fullScreenMenuIsVisible, setFullScreenMenuIsVisible}) => {
     return (
         <div>
-            {renderMenu(currentPage)}
+            {renderMenu(currentPage, webDevAboutMe, projects, education, skills, webDevContact, fullScreenMenuIsVisible, setFullScreenMenuIsVisible)}
         </div>
     );
 };
