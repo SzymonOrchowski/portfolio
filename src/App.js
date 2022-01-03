@@ -80,7 +80,7 @@ function App() {
           </FullScreenMenu>
           </>}
           </div>}
-          <Main>
+          <div id='main'>
             <Routes>
               <Route path='/' element={<WelcomePage setCurrentPage={setCurrentPage}/>} />
               <Route path='/webdev' element={<WebDevPage setCurrentPage={setCurrentPage} refs={refs}/>} />
@@ -88,7 +88,7 @@ function App() {
               <Route path='/discography' element={<DiscographyPage setCurrentPage={setCurrentPage}/>} />
               <Route path='/contact' element={<ContactPage setCurrentPage={setCurrentPage}/>} />
             </Routes>
-          </Main>
+          </div>
       </MainContainer>
     </BrowserRouter>
     );  
@@ -129,10 +129,6 @@ const FullScreenMenu = styled.div`
   overflow: hidden;
   scrollbar-width: none;
   overflow-y: scroll;
-`
-
-let Main = styled.div`
-  width: ${mainWidth};
 `
 
 export default App;

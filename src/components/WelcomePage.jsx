@@ -14,24 +14,24 @@ const WelcomePage = ({setCurrentPage}) => {
                 <div id='welcomeBoxHeaderBox'>
                     <header>
                         Hi, <br/>
-                        I'm Szymon Orchowski, <br/>
-                        junior web developer and music producer<br/>
+                        I'm <span><span id='welcomeBoxHeaderBoxLetterS'>S</span>zymon <span id='welcomeBoxHeaderBoxLetterO'>O</span>rchowski,</span><br/>
+                        junior developer and music producer<br/>
                     </header>
                 </div>
                 <div id='welcomeBoxPortfolioButtonsBox'>
-                    <Link to='/webdev'>
-                        <div id='PortfolioButton'>
-                        My WebDev Portfolio
+                    <Link to='/webdev' style={{textDecoration: 'none'}}>
+                        <div class='PortfolioButton' id='PortfolioButton1'>
+                        My Dev Portfolio
                         </div>
                     </Link>
-                    <Link to='/music'>
-                        <div id='PortfolioButton'>
+                    <Link to='/music' style={{textDecoration: 'none'}}>
+                        <div class='PortfolioButton' id='PortfolioButton2'>
                         My Music Portfolio
                         </div>
                     </Link>
                 </div>
                 <div id='welcomeBoxContactButtonBox'>
-                    <Link to='/contact'>
+                    <Link to='/contact' style={{textDecoration: 'none'}}>
                         <div id='ContactMeButton'>
                         Contact me!
                         </div>
