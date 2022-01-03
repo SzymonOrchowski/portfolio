@@ -9,7 +9,7 @@ const WelcomePage = ({setCurrentPage}) => {
     },[])
 
     return (
-        <WelcomePageContainer id='WelcomePageContainer'>
+        <div id='WelcomePageContainer'>
             <div id='WelcomeBox'>
                 <div id='welcomeBoxHeaderBox'>
                     <header>
@@ -38,12 +38,8 @@ const WelcomePage = ({setCurrentPage}) => {
                     </Link>
                 </div>
             </div>
-        </WelcomePageContainer>
+        </div>
     );
 };
-
-const WelcomePageContainer = styled.div`
-
-`
 
 export default WelcomePage;

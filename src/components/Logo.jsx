@@ -7,8 +7,14 @@ const Logo = ({setCurrentPage}) => {
             e.preventDefault();
             setCurrentPage('WelcomePage')
         }}>
-            <Link to='/'>
-                SO
+            <Link style={{textDecoration: 'none'}} to='/' >
+                <div id='logo-container'>
+                    <div id='logo-box'>
+                        <div id='logo-s'>S</div>
+                        <div id='logo-o'>O</div>
+                    </div>
+                    <div id='logo-home-page'>Home Page</div>
+                </div>
             </Link>
         </div>
     );

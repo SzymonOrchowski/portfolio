@@ -1,36 +1,55 @@
+import { hover } from '@testing-library/user-event/dist/hover';
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 const renderMenu = (pageName, refs, fullScreenMenuIsVisible, setFullScreenMenuIsVisible) => {
     switch(pageName) {
         case 'WelcomePage':
-            return null;
+            return (
+                <>
+                    <div class='menuItemButtonWithNoPadding' onClick={() => {
+                        if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                        }}>
+                            <Link to='/webdev' className='menuItemButtonLink' style={{textDecoration: 'none'}}>
+                                Dev Portfolio
+                            </Link>
+                    </div>
+                    <div class='menuItemButtonWithNoPadding' onClick={() => {
+                        if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                        }}>
+                            <Link to='/music' className='menuItemButtonLink' style={{textDecoration: 'none'}}>
+                                Music Portfolio
+                            </Link>
+                    </div>
+                </>
+            );
         case 'WebDevPage':
             return (<>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.webDevAboutMe.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                         About Me
                 </div>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.projects.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     Projects
                 </div>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.education.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     Education
                 </div>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.skills.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     Skills
                 </div>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.webDevContact.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
@@ -39,49 +58,49 @@ const renderMenu = (pageName, refs, fullScreenMenuIsVisible, setFullScreenMenuIs
                     </>);
         case 'MusicPage':
             return (<>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.musicAboutMe.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     About Me
                 </div>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.myWorks.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     My Works
                 </div>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.myMusic.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     My Music
                 </div>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.myDiscography.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     My Discography
                 </div>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.musicForMarketing.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     Music For Ads
                 </div>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.filmScoring.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     Film Scoring
                 </div>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.soundDesign.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     Sound Design
                 </div>
-                <div onClick={() => {
+                <div class='menuItemButton' onClick={() => {
                     refs.musicContact.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>

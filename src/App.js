@@ -3,6 +3,7 @@ import React, { useState, useRef } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import Logo from './components/Logo';
+import MenuFooter from './components/MenuFooter';
 import MainMenuButton from './components/MainMenuButton';
 import MainMenu from './components/MainMenu';
 import WelcomePage from './components/WelcomePage';
@@ -37,6 +38,7 @@ function App() {
 
   const refs = {webDevAboutMe, projects, education, skills, webDevContact, musicAboutMe, myWorks, myMusic, myDiscography, musicForMarketing, filmScoring, soundDesign, musicContact}
 
+
   return (
     <BrowserRouter>
       <MainContainer>
@@ -54,8 +56,7 @@ function App() {
               />
             </div>
             <div id='menu-footer'>
-              <div>LinkedIn</div>
-              <div>GitHub</div>
+              <MenuFooter />
             </div>
           </Menu>
         : <div>
@@ -74,8 +75,7 @@ function App() {
               />
             </div>
             <div id='menu-footer'>
-              <div>LinkedIn</div>
-              <div>GitHub</div>
+              <MenuFooter />
             </div>
           </FullScreenMenu>
           </>}
@@ -99,42 +99,39 @@ const MainContainer = styled.div`
   flex-direction: row;
 `
 const Menu = styled.div`
-  width: 150px;
+  color: #FFFFFF;
+  background-color: #181818; 
   height: 100vh;
   margin: 0px;
   padding: 0px;
-  border-style: solid;
-  border-color: blue;
-  border-width: 1px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
+  overflow: hidden;
+  scrollbar-width: none;
   overflow-y: scroll;
 `
 
 const FullScreenMenu = styled.div`
+  color: #FFFFFF;   
   position: absolute;
   z-index: 1;
   width: 100vw;
   height: 100vh;
   margin: 0px;
-  padding: 0px;
-  background-color: white;
-  border-style: solid;
-  border-color: blue;
-  border-width: 1px;
+  align-items: center;
+  background-color: #181818;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
+  overflow: hidden;
+  scrollbar-width: none;
   overflow-y: scroll;
 `
 
 let Main = styled.div`
-  border-style: solid;
-  border-color: red;
-  border-width: 1px;
   width: ${mainWidth};
 `
 

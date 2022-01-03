@@ -1,19 +1,31 @@
 body {
+  background-color: #1D1D1D;
+  color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
   width: min-content;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #menu-logo {
-  flex: 2
+  flex: 2;
+  width: 150px;
 }
 
 #menu-content {
-  flex: 5
+  flex: 5;
+  width: 100%;
 }
 
 #menu-footer {
-  flex: 1
+  flex: 1;
+  width: 150px
+}
+
+#menu-footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #menu-button {
@@ -22,22 +34,122 @@ body {
   top: 14px;
   width: 60px;
   height: 60px;
-  background-color: magenta;
+  background-color: #000000;
   z-index: 2;
 }
 
-#WelcomePageContainer {
-  border-style: solid;
+.menuItemButton {
+  color: #616165;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #1D1D1D;
+  border-style: none none solid solid;
   border-width: 1px;
-  border-color: blueviolet;
+  border-color: #616165;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.menuItemButton:hover {
+  color: #1D1D1D;
+  background-color: #616165;
+  cursor: pointer;
+}
+
+.menuItemButtonWithNoPadding {
+  color: #616165;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #1D1D1D;
+  border-style: none none solid solid;
+  border-width: 1px;
+  border-color: #616165;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.menuItemButtonWithNoPadding:hover {
+  color: #1D1D1D;
+  background-color: #616165;
+}
+
+.menuItemButtonLink {
+  display:block;
+  color: #616165;
+  font-weight: 400;
+  font-size: 18px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.menuItemButtonLink:hover {
+  color: #1D1D1D;
+  background-color: #616165;
+}
+
+/*          */
+/*   Logo   */
+/*          */
+
+#logo-container {
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  height: 140px;
+  background-color: #000000;
+  padding: 10px 0px 30px 0px;
+}
+
+#logo-box {
+  font-size: 100px;
+  font-weight: 600;
+  height: 130px;
+}
+
+#logo-s {
+  position: relative;
+  left: 30px;
+  top: -20px;
+  color: #93C2F0;
+  width: 55px;
+}
+
+#logo-o {
+  position: relative;
+  left: 45px;
+  top: -130px;
+  width: 80px;
+  color: #ECC05B;
+}
+
+#logo-home-page {
+  color: #616165;
+  text-align: center;
+}
+
+/*                 */
+/*   Welcome Page  */
+/*                 */
+
+#WelcomePageContainer {
+  background-color: #1D1D1D;
   height: 100vh;
   justify-content: center;
+  overflow: hidden;
+  scrollbar-width: none;
 }
 
 #WelcomeBox {
+  color: #FFFFFF;
   border-style: solid;
   border-width: 1px;
   border-color: yellowgreen;
+  background-color: #1D1D1D;
   margin-top: 25vh;
   margin-right: 40px;
   margin-bottom: 40px;
@@ -74,7 +186,13 @@ body {
   width: 100%;
   height: 100vh;
   overflow-y: scroll;
+  scrollbar-width: none;
 }
+
+
+/*                */
+/*   WebDev Page  */
+/*                */
 
 /* WebDevAboutMe */
 
@@ -84,7 +202,7 @@ body {
   height: calc(100vh - 40px);
   display: flex;
   flex-direction: row;
-  padding: 20px
+  padding: 20px;
 }
 
 @media (max-width: 1000px) {
