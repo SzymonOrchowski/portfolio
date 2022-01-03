@@ -2,7 +2,7 @@ import React from 'react';
 
 const MusicAboutMe = () => {
     return (
-        <div>
+        <div id='music-about-me'>
             MusicAboutMe
         </div>
     );

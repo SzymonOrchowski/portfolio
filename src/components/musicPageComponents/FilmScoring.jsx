@@ -2,7 +2,7 @@ import React from 'react';
 
 const FilmScoring = () => {
     return (
-        <div>
+        <div id='film-scoring'>
             FilmScoring
         </div>
     );

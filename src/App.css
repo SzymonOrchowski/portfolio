@@ -163,3 +163,80 @@ body {
   margin: 0px;
 }
 
+
+/*                */
+/*   Music Page   */
+/*                */
+
+/*   MusicAboutMe   */
+
+#music-about-me {
+  background-color: lightpink;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px 20px 40px 30px
+}
+
+/*   MyWorks   */
+
+#my-works {
+  background-color: lightskyblue;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px 20px 40px 30px
+}
+
+/*   MyMusic   */
+
+#my-music {
+  background-color: lightgray;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px 20px 40px 30px
+}
+
+/*   MyDiscography   */
+
+#my-discography {
+  background-color: lightcoral;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px 20px 40px 30px
+}
+
+/*   MusicForMarketing   */
+
+#music-for-marketing {
+  background-color: green;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px 20px 40px 30px
+}
+
+/*   FilmScoring   */
+
+#film-scoring {
+  background-color: blueviolet;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px 20px 40px 30px
+}
+
+/*   SoundDesign   */
+
+#sound-design {
+  background-color: sienna;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px 20px 40px 30px
+}
+
+/*   MusicContact   */
+
+#music-contact {
+  background-color: slategrey;
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  padding: 20px 20px 40px 30px
+}
+

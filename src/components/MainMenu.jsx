@@ -1,38 +1,37 @@
 import React from 'react';
 
-const renderMenu = (pageName, webDevAboutMe, projects, education, skills, webDevContact, fullScreenMenuIsVisible, setFullScreenMenuIsVisible) => {
+const renderMenu = (pageName, refs, fullScreenMenuIsVisible, setFullScreenMenuIsVisible) => {
     switch(pageName) {
         case 'WelcomePage':
             return null;
         case 'WebDevPage':
             return (<>
                 <div onClick={() => {
-                    webDevAboutMe.current.scrollIntoView()
-                    console.log(fullScreenMenuIsVisible);
+                    refs.webDevAboutMe.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                         About Me
                 </div>
                 <div onClick={() => {
-                    projects.current.scrollIntoView()
+                    refs.projects.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     Projects
                 </div>
                 <div onClick={() => {
-                    education.current.scrollIntoView()
+                    refs.education.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     Education
                 </div>
                 <div onClick={() => {
-                    skills.current.scrollIntoView()
+                    refs.skills.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     Skills
                 </div>
                 <div onClick={() => {
-                    webDevContact.current.scrollIntoView()
+                    refs.webDevContact.current.scrollIntoView()
                     if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
                     }}>
                     Contact
@@ -40,14 +39,54 @@ const renderMenu = (pageName, webDevAboutMe, projects, education, skills, webDev
                     </>);
         case 'MusicPage':
             return (<>
-                <div>About Me</div>
-                <div>My Works</div>
-                <div>My Music</div>
-                <div>My Discography</div>
-                <div>Music For Ads</div>
-                <div>Film Scoring</div>
-                <div>Sound Design</div>
-                <div>Contact</div>
+                <div onClick={() => {
+                    refs.musicAboutMe.current.scrollIntoView()
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                    About Me
+                </div>
+                <div onClick={() => {
+                    refs.myWorks.current.scrollIntoView()
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                    My Works
+                </div>
+                <div onClick={() => {
+                    refs.myMusic.current.scrollIntoView()
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                    My Music
+                </div>
+                <div onClick={() => {
+                    refs.myDiscography.current.scrollIntoView()
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                    My Discography
+                </div>
+                <div onClick={() => {
+                    refs.musicForMarketing.current.scrollIntoView()
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                    Music For Ads
+                </div>
+                <div onClick={() => {
+                    refs.filmScoring.current.scrollIntoView()
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                    Film Scoring
+                </div>
+                <div onClick={() => {
+                    refs.soundDesign.current.scrollIntoView()
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                    Sound Design
+                </div>
+                <div onClick={() => {
+                    refs.musicContact.current.scrollIntoView()
+                    if (fullScreenMenuIsVisible) setFullScreenMenuIsVisible(false)
+                    }}>
+                    Contact
+                </div>
                     </>);
         case 'DiscographyPage':
             return null;
@@ -56,10 +95,10 @@ const renderMenu = (pageName, webDevAboutMe, projects, education, skills, webDev
     }
 }
 
-const MainMenu = ({currentPage, webDevAboutMe, projects, education, skills, webDevContact, fullScreenMenuIsVisible, setFullScreenMenuIsVisible}) => {
+const MainMenu = ({currentPage, refs, fullScreenMenuIsVisible, setFullScreenMenuIsVisible}) => {
     return (
         <div>
-            {renderMenu(currentPage, webDevAboutMe, projects, education, skills, webDevContact, fullScreenMenuIsVisible, setFullScreenMenuIsVisible)}
+            {renderMenu(currentPage, refs, fullScreenMenuIsVisible, setFullScreenMenuIsVisible)}
         </div>
     );
 };

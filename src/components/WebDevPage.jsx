@@ -5,7 +5,7 @@ import Skills from './webDevPageComponents/Skills';
 import WebDevContact from './webDevPageComponents/WebDevContact';
 import Education from './webDevPageComponents/Education';
 
-const WebDevPage = ({setCurrentPage, webDevAboutMe, projects, education, skills, webDevContact}) => {
+const WebDevPage = ({setCurrentPage, refs}) => {
 
     useEffect(()=>{
         setCurrentPage('WebDevPage')
@@ -13,19 +13,19 @@ const WebDevPage = ({setCurrentPage, webDevAboutMe, projects, education, skills,
 
     return (
         <div id='web-dev-container'>
-            <div ref={webDevAboutMe}>
+            <div ref={refs.webDevAboutMe}>
                 <WebDevAboutMe />
             </div>
-            <div ref={projects}>
+            <div ref={refs.projects}>
                <Projects /> 
             </div>
-            <div ref={education}>
+            <div ref={refs.education}>
                 <Education />
             </div>
-            <div ref={skills}>
+            <div ref={refs.skills}>
                 <Skills />
             </div>
-            <div ref={webDevContact}>
+            <div ref={refs.webDevContact}>
                 <WebDevContact />
             </div>
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const MyDiscography = () => {
     return (
-        <div>
+        <div id='my-discography'>
             MyDiscography
         </div>
     );

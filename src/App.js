@@ -26,6 +26,17 @@ function App() {
   const skills = useRef(null)
   const webDevContact = useRef(null)
 
+  const musicAboutMe = useRef(null)
+  const myWorks = useRef(null)
+  const myMusic = useRef(null)
+  const myDiscography = useRef(null)
+  const musicForMarketing = useRef(null)
+  const filmScoring = useRef(null)
+  const soundDesign = useRef(null)
+  const musicContact = useRef(null)
+
+  const refs = {webDevAboutMe, projects, education, skills, webDevContact, musicAboutMe, myWorks, myMusic, myDiscography, musicForMarketing, filmScoring, soundDesign, musicContact}
+
   return (
     <BrowserRouter>
       <MainContainer>
@@ -37,11 +48,7 @@ function App() {
             <div id='menu-content'>
               <MainMenu 
                 currentPage={currentPage}
-                webDevAboutMe={webDevAboutMe}
-                projects={projects}
-                education={education}
-                skills={skills}
-                webDevContact={webDevContact}
+                refs={refs}
                 fullScreenMenuIsVisible={fullScreenMenuIsVisible}
                 setFullScreenMenuIsVisible={setFullScreenMenuIsVisible}
               />
@@ -60,13 +67,8 @@ function App() {
             </div>
             <div id='menu-content'>
               <MainMenu 
-                fullScreenMenuIsVisible={fullScreenMenuIsVisible}
                 currentPage={currentPage}
-                webDevAboutMe={webDevAboutMe}
-                projects={projects}
-                education={education}
-                skills={skills}
-                webDevContact={webDevContact}
+                refs={refs}
                 fullScreenMenuIsVisible={fullScreenMenuIsVisible}
                 setFullScreenMenuIsVisible={setFullScreenMenuIsVisible}
               />
@@ -81,8 +83,8 @@ function App() {
           <Main>
             <Routes>
               <Route path='/' element={<WelcomePage setCurrentPage={setCurrentPage}/>} />
-              <Route path='/webdev' element={<WebDevPage setCurrentPage={setCurrentPage} webDevAboutMe={webDevAboutMe} projects={projects} education={education} skills={skills} webDevContact={webDevContact}/>} />
-              <Route path='/music' element={<MusicPage setCurrentPage={setCurrentPage}/>} />
+              <Route path='/webdev' element={<WebDevPage setCurrentPage={setCurrentPage} refs={refs}/>} />
+              <Route path='/music' element={<MusicPage setCurrentPage={setCurrentPage} refs={refs}/>} />
               <Route path='/discography' element={<DiscographyPage setCurrentPage={setCurrentPage}/>} />
               <Route path='/contact' element={<ContactPage setCurrentPage={setCurrentPage}/>} />
             </Routes>

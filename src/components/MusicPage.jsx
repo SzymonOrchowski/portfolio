@@ -8,22 +8,38 @@ import FilmScoring from './musicPageComponents/FilmScoring';
 import SoundDesign from './musicPageComponents/SoundDesign';
 import MusicContact from './musicPageComponents/MusicContact';
 
-const MusicPage = ({setCurrentPage}) => {
+const MusicPage = ({setCurrentPage, refs}) => {
 
     useEffect(()=>{
         setCurrentPage('MusicPage')
     },[])
 
     return (
-        <div>
-            <MusicAboutMe />
-            <MyWorks />
-            <MyMusic />
-            <MyDiscography />
-            <MusicForMarketing />
-            <FilmScoring />
-            <SoundDesign />
-            <MusicContact />
+        <div id='web-dev-container'>
+            <div ref={refs.musicAboutMe}>
+                <MusicAboutMe />
+            </div>
+            <div ref={refs.myWorks}>
+                <MyWorks />
+            </div>
+            <div ref={refs.myMusic}> 
+                <MyMusic />
+            </div>
+            <div ref={refs.myDiscography}> 
+                <MyDiscography />
+            </div>
+            <div ref={refs.musicForMarketing}>
+                <MusicForMarketing />
+            </div>
+            <div ref={refs.filmScoring}>
+                <FilmScoring />
+            </div>
+            <div ref={refs.soundDesign}>
+                <SoundDesign />
+            </div>
+            <div ref={refs.musicContact}>              
+                <MusicContact />
+            </div>
         </div>
     );
 };

@@ -2,7 +2,7 @@ import React from 'react';
 
 const SoundDesign = () => {
     return (
-        <div>
+        <div id='sound-design'>
             SoundDesign
         </div>
     );
