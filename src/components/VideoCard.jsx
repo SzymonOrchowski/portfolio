@@ -8,16 +8,16 @@ const VideoCard = ({data}) => {
             </div>
             <div className='video-card-description'>
                 <div>
-                {data.description.artist}
+                    {data.description.artist}
                 </div>
                 <div>
-                {data.description.title}
+                    {data.description.title}
                 </div>
                 <div>
-                released by {data.description.releasedBy} in {data.description.releasedInYear}
+                    released by {data.description.releasedBy} in {data.description.releasedInYear}
                 </div>
                 <div>
-                {data.description.myRole}
+                    {data.description.myRole}
                 </div>
             </div>
         </div>

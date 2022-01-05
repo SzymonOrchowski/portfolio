@@ -419,6 +419,17 @@ body {
   padding: 20px 20px 40px 30px
 }
 
+#pagination-box {
+  text-align: center;
+  margin-right: 15px;
+}
+
+#pagination-box button {
+margin: 2px;
+min-width: 25px;
+}
+
+
 /*   MyMusic   */
 
 #my-music {
