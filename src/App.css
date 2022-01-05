@@ -146,12 +146,22 @@ body {
 /*   Welcome Page  */
 /*                 */
 
+#o-in-background {
+  position: absolute;
+  top: -800px;
+  left: 870px;
+  font-size: 2000px;
+  font-weight: 800;
+  color: #222222;
+  z-index: 0;
+}
+
 #WelcomePageContainer {
   background-color: #1D1D1D;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow:unset;
   scrollbar-width: none;
   display: flex;
 }
@@ -165,7 +175,6 @@ body {
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
-  /* border:chocolate solid 1px */
 }
 
 @media (max-width: 800px) {
@@ -395,7 +404,7 @@ body {
 /*   MusicAboutMe   */
 
 #music-about-me {
-  background-color: lightpink;
+  background-color: #1D1D1D;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
@@ -404,16 +413,16 @@ body {
 /*   MyWorks   */
 
 #my-works {
-  background-color: lightskyblue;
+  background-color: #1D1D1D;
   width: calc(100% - 40px);
-  height: calc(100vh - 40px);
+  min-height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
 }
 
 /*   MyMusic   */
 
 #my-music {
-  background-color: lightgray;
+  background-color: pink;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
@@ -422,7 +431,7 @@ body {
 /*   MyDiscography   */
 
 #my-discography {
-  background-color: lightcoral;
+  background-color: 1D1D1D;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
@@ -431,7 +440,7 @@ body {
 /*   MusicForMarketing   */
 
 #music-for-marketing {
-  background-color: green;
+  background-color: 1D1D1D;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
@@ -440,7 +449,7 @@ body {
 /*   FilmScoring   */
 
 #film-scoring {
-  background-color: blueviolet;
+  background-color: 1D1D1D;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
@@ -449,7 +458,7 @@ body {
 /*   SoundDesign   */
 
 #sound-design {
-  background-color: sienna;
+  background-color: 1D1D1D;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
@@ -458,9 +467,33 @@ body {
 /*   MusicContact   */
 
 #music-contact {
-  background-color: slategrey;
+  background-color: 1D1D1D;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
 }
 
+#my-works-videocards-container {
+  margin-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.video-card {
+  width: 408px;
+  height: 285px;
+}
+
+.video-card-player {
+  border: none;
+  width: 100%;
+  height: 170px;
+}
+
+.video-card-description {
+  background-color: #222222;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 6px
+}

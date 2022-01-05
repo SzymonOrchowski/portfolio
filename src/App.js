@@ -45,7 +45,7 @@ function App() {
         {useWindowDimensions().width > minimalWidthToShowMenu ? 
           <Menu>
             <div id='menu-logo'>
-              <Logo currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+              <Logo currentPage={currentPage} setCurrentPage={setCurrentPage} fullScreenMenuIsVisible={fullScreenMenuIsVisible} setFullScreenMenuIsVisible={setFullScreenMenuIsVisible}/>
             </div>
             <div id='menu-content'>
               <MainMenu 
@@ -64,7 +64,7 @@ function App() {
           <MainMenuButton fullScreenMenuIsVisible={fullScreenMenuIsVisible} setFullScreenMenuIsVisible={setFullScreenMenuIsVisible}/>
           <FullScreenMenu>
           <div id='menu-logo'>
-              <Logo currentPage={currentPage} setCurrentPage={setCurrentPage}/>
+              <Logo currentPage={currentPage} setCurrentPage={setCurrentPage} fullScreenMenuIsVisible={fullScreenMenuIsVisible} setFullScreenMenuIsVisible={setFullScreenMenuIsVisible}/>
             </div>
             <div id='menu-content'>
               <MainMenu 
