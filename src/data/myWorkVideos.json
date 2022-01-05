@@ -2,6 +2,7 @@
     {   
         "id" : 1,
         "link" : "https://www.youtube.com/embed/uxyZG89TPpc",
+        "ytVideoId" : "uxyZG89TPpc",
         "description" : {
             "artist" : "Hetane",
             "title": "Klopoty",
@@ -13,6 +14,7 @@
     {
         "id" : 2,
         "link" : "https://www.youtube.com/embed/DBZxgUzUHU0",
+        "ytVideoId" : "DBZxgUzUHU0",
         "description" : {
             "artist" : "Dominika Barabas",
             "title": "Trotyl",
@@ -24,6 +26,7 @@
     {
         "id" : 3,
         "link" : "https://www.youtube.com/embed/S5oT4PUzV3w",
+        "ytVideoId" : "DBZxgUzUHU0",
         "description" : {
             "artist" : "Limboski",
             "title": "Krakow Pijany",

@@ -421,19 +421,75 @@ body {
 
 #pagination-box {
   text-align: center;
+  margin-top: 8px;
   margin-right: 15px;
 }
 
 #pagination-box button {
 margin: 2px;
+padding: 6px 10px 6px 10px;
 min-width: 25px;
+}
+
+.pagination-button-active {
+  background-color: #616165;
+  color: #000000;
+  border-color: #000000;
+  border-style:solid;
+  border-radius: 0%;
+  border-width: 1px;
+}
+
+.pagination-button-inactive {
+  background-color: #000000;
+  color: #616165;
+  border-color: #616165;
+  border-style:solid;
+  border-radius: 0%;
+  border-width: 1px;
+}
+
+.pagination-button-prev {
+  background-color: #000000;
+  color: #616165;
+  border-color: #616165;
+  border-style:solid;
+  border-radius: 0%;
+  border-width: 1px;
+}
+
+.pagination-button-prev-disabled {
+  background-color: #1D1D1D;
+  color: #282828;
+  border-color: #282828;
+  border-style:solid;
+  border-radius: 0%;
+  border-width: 1px;
+}
+
+.pagination-button-next {
+  background-color: #000000;
+  color: #616165;
+  border-color: #616165;
+  border-style:solid;
+  border-radius: 0%;
+  border-width: 1px;
+}
+
+.pagination-button-next-disabled {
+  background-color: #1D1D1D;
+  color: #282828;
+  border-color: #282828;
+  border-style:solid;
+  border-radius: 0%;
+  border-width: 1px;
 }
 
 
 /*   MyMusic   */
 
 #my-music {
-  background-color: pink;
+  background-color: #1D1D1D;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
@@ -442,7 +498,7 @@ min-width: 25px;
 /*   MyDiscography   */
 
 #my-discography {
-  background-color: 1D1D1D;
+  background-color: #1D1D1D;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
@@ -451,7 +507,7 @@ min-width: 25px;
 /*   MusicForMarketing   */
 
 #music-for-marketing {
-  background-color: 1D1D1D;
+  background-color: #1D1D1D;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
@@ -460,7 +516,7 @@ min-width: 25px;
 /*   FilmScoring   */
 
 #film-scoring {
-  background-color: 1D1D1D;
+  background-color: #1D1D1D;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
@@ -469,7 +525,7 @@ min-width: 25px;
 /*   SoundDesign   */
 
 #sound-design {
-  background-color: 1D1D1D;
+  background-color: #1D1D1D;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
@@ -478,7 +534,7 @@ min-width: 25px;
 /*   MusicContact   */
 
 #music-contact {
-  background-color: 1D1D1D;
+  background-color: #1D1D1D;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px 20px 40px 30px
@@ -508,3 +564,5 @@ min-width: 25px;
   text-align: center;
   padding-bottom: 6px
 }
+
+

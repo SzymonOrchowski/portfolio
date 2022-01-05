@@ -14,7 +14,7 @@ const MyWorks = () => {
             <div>
                 <header id='my-works-text-header'>
                     <h1>
-                        MyWorks
+                        My works
                     </h1>
                 </header>
                 <main>
@@ -28,31 +28,32 @@ const MyWorks = () => {
                 </main>
                 <div id='pagination-box'>
                         {pageNumber === 1 ? 
-                            <button className='button-special' disabled>
+                            <button className='pagination-button-prev-disabled' disabled>
                                 prev
                             </button>
                         :
-                            <button className='button-special' onClick={(e)=>{
+                            <button className='pagination-button-prev' onClick={(e)=>{
                                 e.preventDefault();
                                 setPageNumber(pageNumber - 1)
                             }}>
                                 prev
                             </button>
                         }
-                        {pagesArray.map((pageNumber)=>{
-                            return <button onClick={(e)=>{
+                        {pagesArray.map((page)=>{
+                            return <button key={page} className={page === pageNumber ? 'pagination-button-active' : 'pagination-button-inactive'}
+                                onClick={(e)=>{
                                 e.preventDefault();
-                                setPageNumber(pageNumber)
+                                setPageNumber(page)
                             }}>
-                                {pageNumber}
+                                {page}
                             </button>
                         })}
                         {pageNumber === pagesArray.length ? 
-                            <button className='button-special' disabled>
+                            <button className='pagination-button-next-disabled' disabled>
                                 next
                             </button>
                         :
-                            <button className='button-special' onClick={(e)=>{
+                            <button className='pagination-button-next' onClick={(e)=>{
                                 e.preventDefault();
                                 setPageNumber(pageNumber + 1)
                             }}>
