@@ -404,10 +404,51 @@ body {
 /*   MusicAboutMe   */
 
 #music-about-me {
+  /* border: white solid 1px; */
   background-color: #1D1D1D;
-  width: calc(100% - 40px);
-  height: calc(100vh - 40px);
-  padding: 20px 20px 40px 30px
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+#music-about-me-svg-background {
+  position: absolute;
+  height: 100vh;
+  z-index: 0;
+}
+
+#music-about-me-svg-background svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+#music-about-me-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1200px) {
+  #music-about-me-container {
+    flex-direction: column;
+  }
+}
+
+#music-about-me-text {
+  padding: 20px 20px 40px 30px;
+  flex: 1;
+  z-index: 1;
+  /* border: yellow solid 1px */
+}
+
+#music-about-me-photo-container {
+  flex: 1;
+  /* border: white solid 1px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*   MyWorks   */
@@ -432,6 +473,7 @@ min-width: 25px;
 }
 
 .pagination-button-active {
+  cursor: pointer;
   background-color: #616165;
   color: #000000;
   border-color: #000000;
@@ -441,6 +483,7 @@ min-width: 25px;
 }
 
 .pagination-button-inactive {
+  cursor: pointer;
   background-color: #000000;
   color: #616165;
   border-color: #616165;
@@ -450,6 +493,7 @@ min-width: 25px;
 }
 
 .pagination-button-prev {
+  cursor: pointer;
   background-color: #000000;
   color: #616165;
   border-color: #616165;
@@ -468,6 +512,7 @@ min-width: 25px;
 }
 
 .pagination-button-next {
+  cursor: pointer;
   background-color: #000000;
   color: #616165;
   border-color: #616165;
@@ -542,6 +587,7 @@ min-width: 25px;
 
 #my-works-videocards-container {
   margin-right: 15px;
+  max-width: 1620px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -565,4 +611,12 @@ min-width: 25px;
   padding-bottom: 6px
 }
 
+#photo-div {
+  width: 100%;
+}
 
+#photo {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}

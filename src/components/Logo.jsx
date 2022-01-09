@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Logo = ({setCurrentPage, fullScreenMenuIsVisible, setFullScreenMenuIsVisible}) => {
-    console.log(fullScreenMenuIsVisible)
     return (
         <div onClick={(e)=>{
             e.preventDefault();
