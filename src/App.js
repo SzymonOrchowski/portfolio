@@ -129,6 +129,7 @@ const FullScreenMenu = styled.div`
   overflow: hidden;
   scrollbar-width: none;
   overflow-y: scroll;
+  z-index: 80;
 `
 
 export default App;
