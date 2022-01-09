@@ -13,7 +13,9 @@ const SlideAutoGallery = ({data}) => {
 
     return (
         <div>
-            <div id='photo-div'><img id='photo' src={process.env.PUBLIC_URL + overPhotoPath}></img></div>
+            <div id='photo-div'>
+                <img id='photo' src={process.env.PUBLIC_URL + overPhotoPath}></img>
+            </div>
         </div>
     );
 };

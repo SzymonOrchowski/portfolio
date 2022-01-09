@@ -16,7 +16,7 @@ const MusicAboutMeBackgroundSVG = () => {
     Z
     `
 
-    console.log(width, ' x ', height, ' ',svgpath1)
+    // console.log(width, ' x ', height, ' ',svgpath1)
 
     return (
             <div id='music-about-me-svg-background'>

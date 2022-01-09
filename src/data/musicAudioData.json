@@ -1,0 +1,79 @@
+{"tracks" : [
+    {
+        "number" : 1,
+        "filepath" : "/audio/..",
+        "artist" : "Esther Koch",
+        "title" : "Symptoms (BBC Sound First)",
+        "duration" : "3:33"
+    },
+    {
+        "number" : 2,
+        "filepath" : "/audio/..",
+        "artist" : "Sound Design and Music for the script from BBC Sound First Competition",
+        "title" : "",
+        "duration" : "3:33"
+    },
+    {
+        "number" : 3,
+        "filepath" : "/audio/..",
+        "artist" : "Szymon Orchowski",
+        "title" : "Central station",
+        "duration" : "3:33"
+    },
+    {
+        "number" : 4,
+        "filepath" : "/audio/..",
+        "artist" : "Szymon Orchowski",
+        "title" : "Bleeding fingers",
+        "duration" : "3:33"
+    },
+    {
+        "number" : 5,
+        "filepath" : "/audio/..",
+        "artist" : "Szymon Orchowski",
+        "title" : "Sextet",
+        "duration" : "3:33"
+    },
+    {
+        "number" : 6,
+        "filepath" : "/audio/..",
+        "artist" : "Szymon Orchowski",
+        "title" : "Soundscape",
+        "duration" : "3:33"
+    },
+    {
+        "number" : 7,
+        "filepath" : "/audio/..",
+        "artist" : "Szymon Orchowski",
+        "title" : "Orchestral Piece op. 12",
+        "duration" : "3:33"
+    },
+    {
+        "number" : 8,
+        "filepath" : "/audio/..",
+        "artist" : "Flying Moses",
+        "title" : "Down The Hill",
+        "duration" : "3:33"
+    },
+    {
+        "number" : 9,
+        "filepath" : "/audio/..",
+        "artist" : "Flying Moses",
+        "title" : "Waiting",
+        "duration" : "3:33"
+    },
+    {
+        "number" : 10,
+        "filepath" : "/audio/..",
+        "artist" : "Flying Moses",
+        "title" : "The Macabrey",
+        "duration" : "3:33"
+    },
+    {
+        "number" : 11,
+        "filepath" : "/audio/..",
+        "artist" : "Adam Siemienczyk",
+        "title" : "Sanja",
+        "duration" : "3:33"
+    }
+]}

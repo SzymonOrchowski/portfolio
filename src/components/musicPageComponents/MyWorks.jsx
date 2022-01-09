@@ -17,7 +17,7 @@ const MyWorks = () => {
                         My works
                     </h1>
                 </header>
-                <main>
+                <div>
                     <div id='my-works-videocards-container'>
                         {videosData.videos.map((video, index) => {
                             if (index >= (pageNumber - 1) * 6 && index < pageNumber * 6) {
@@ -25,7 +25,7 @@ const MyWorks = () => {
                             }
                         })}
                     </div>
-                </main>
+                </div>
                 <div id='pagination-box'>
                         {pageNumber === 1 ? 
                             <button className='pagination-button-prev-disabled' disabled>

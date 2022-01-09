@@ -15,7 +15,7 @@ const MusicPage = ({setCurrentPage, refs}) => {
     },[])
 
     return (
-        <div id='web-dev-container'>
+        <div id='music-all-container'>
             <div ref={refs.musicAboutMe}>
                 <MusicAboutMe />
             </div>
