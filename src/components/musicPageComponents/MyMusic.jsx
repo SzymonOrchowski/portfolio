@@ -14,6 +14,8 @@ const MyMusic = () => {
     const [isMuted, setIsMuted] = useState(false)
     const [currentTime, setCurrentTime] = useState(0)
 
+
+
     return (
         <div id='my-music'>
             <div>
@@ -46,6 +48,7 @@ const MyMusic = () => {
                     <div className='audio-player-track-nav-bar'>
                         <div className='audio-player-track-nav-button-container'>
                             <div className='audio-player-navbutton' onClick={()=>{
+                                setCurrentTime(0)
                                 currentSong.number === 1 ? setCurrentSong(musicAudioData.tracks[musicAudioData.tracks.length - 1]) : setCurrentSong(musicAudioData.tracks[currentSong.number - 2])
                                 setIsPlaying(true);
                                 setTimeout(()=>{document.getElementById('audio').play()}, 50)
@@ -53,6 +56,7 @@ const MyMusic = () => {
                                     <img src={prevbutton} width='28' alt='prev'/>
                                 </div>
                             <div className='audio-player-navbutton' onClick={()=>{
+                                setCurrentTime(0)
                                 currentSong.number === musicAudioData.tracks.length ? setCurrentSong(musicAudioData.tracks[0]) : setCurrentSong(musicAudioData.tracks[currentSong.number])
                                 setIsPlaying(true);
                                 setTimeout(()=>{document.getElementById('audio').play()}, 50)
@@ -71,13 +75,17 @@ const MyMusic = () => {
                         <div className='audio-player-time'>
                             {timeFormat(currentTime)} / {currentSong.duration}
                         </div>
-                        <div className='audio-player-volume' onClick={() => {isMuted ? setIsMuted(false) : setIsMuted(true)}}>
+                        <div className='audio-player-volume' onClick={() => {
+                            isMuted ? setIsMuted(false) : setIsMuted(true)
+                            isMuted ? document.getElementById('audio').volume = 0 : document.getElementById('audio').volume = 1
+                            }}>
                             {isMuted ? <img src={volumebutton} width='24' alt='volume'/> : <img src={mutebutton} width='24' alt='mute'/>}
                         </div>
                     </div>
                     <div className='audio-player-track-list'>
                         {musicAudioData.tracks.map((track) => {
                             return <div key={track.number} className='audio-player-track' onClick={()=>{
+                                        setCurrentTime(0)
                                         setCurrentSong(musicAudioData.tracks[track.number - 1]);
                                         setIsPlaying(true);
                                         setTimeout(()=>{document.getElementById('audio').play()}, 50)
