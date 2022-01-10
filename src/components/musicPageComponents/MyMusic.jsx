@@ -26,7 +26,7 @@ const MyMusic = () => {
                 <div className='audio-player-full'>
                     <div className='audio-player-top-bar'>
                         <div onClick={() => {isPlaying ? setIsPlaying(false) : setIsPlaying(true)}}>
-                            {isPlaying ? <img src={pausebutton} width='90'/> : <img src={playbutton} width='90'/>}
+                            {isPlaying ? <img src={pausebutton} width='90' alt='pause'/> : <img src={playbutton} width='90' alt='play'/>}
                         </div>
                         <div className='audio-player-currentsonginfo'>
                             <div><b>{currentSong.artist}</b></div>
@@ -38,12 +38,12 @@ const MyMusic = () => {
                             <div className='audio-player-navbutton' onClick={()=>{
                                 currentSong.number === 1 ? setCurrentSong(musicAudioData.tracks[musicAudioData.tracks.length - 1]) : setCurrentSong(musicAudioData.tracks[currentSong.number - 2])
                                 }}>
-                                    <img src={prevbutton} width='28' />
+                                    <img src={prevbutton} width='28' alt='prev'/>
                                 </div>
                             <div className='audio-player-navbutton' onClick={()=>{
                                 currentSong.number === musicAudioData.tracks.length ? setCurrentSong(musicAudioData.tracks[0]) : setCurrentSong(musicAudioData.tracks[currentSong.number])
                                 }}>
-                                    <img src={nextbutton} width='28'/>
+                                    <img src={nextbutton} width='28' alt='next'/>
                                 </div>
                         </div>
                         <div className='audio-player-progressbar-container'>
@@ -53,12 +53,12 @@ const MyMusic = () => {
                         </div>
                         <div className='audio-player-time'>3:33 / 3:33</div>
                         <div className='audio-player-volume' onClick={() => {isMuted ? setIsMuted(false) : setIsMuted(true)}}>
-                            {isMuted ? <img src={volumebutton} width='24'/> : <img src={mutebutton} width='24'/>}
+                            {isMuted ? <img src={volumebutton} width='24' alt='volume'/> : <img src={mutebutton} width='24' alt='mute'/>}
                         </div>
                     </div>
                     <div className='audio-player-track-list'>
                         {musicAudioData.tracks.map((track) => {
-                            return <div className='audio-player-track' onClick={()=>{setCurrentSong(musicAudioData.tracks[track.number - 1])}}>
+                            return <div key={track.number} className='audio-player-track' onClick={()=>{setCurrentSong(musicAudioData.tracks[track.number - 1])}}>
                                         <div>
                                             <div>{track.number}. {track.artist} - {track.title}</div>
                                         </div>

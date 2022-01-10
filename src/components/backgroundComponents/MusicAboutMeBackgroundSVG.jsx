@@ -21,7 +21,7 @@ const MusicAboutMeBackgroundSVG = () => {
     return (
             <div id='music-about-me-svg-background'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox={svgViewBox1}>
-                    <path fill="#212121" fill-opacity="1" d={svgpath1}></path>
+                    <path fill="#212121" fillOpacity="1" d={svgpath1}></path>
                 </svg>
             </div>
     );
