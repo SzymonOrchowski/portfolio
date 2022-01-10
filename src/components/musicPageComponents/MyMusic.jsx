@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import musicAudioData from '../../data/musicAudioData.json'
+import { timeFormat } from '../../utils/utils';
 import playbutton from '../../img/icons/audioplayer/iconmonstr-media-control-4-240.png'
 import pausebutton from '../../img/icons/audioplayer/iconmonstr-media-control-8-240.png'
 import prevbutton from '../../img/icons/audioplayer/iconmonstr-media-control-33-240.png'
@@ -11,7 +12,8 @@ const MyMusic = () => {
     const [isPlaying, setIsPlaying] = useState(false)
     const [currentSong, setCurrentSong] = useState(musicAudioData.tracks[0])
     const [isMuted, setIsMuted] = useState(false)
-    
+    const [currentTime, setCurrentTime] = useState(0)
+
     return (
         <div id='my-music'>
             <div>
@@ -23,9 +25,17 @@ const MyMusic = () => {
                         A few examples of my work as an independent composer.   
                     </p>
                 </header>
+                <div>
+                    <audio id="audio" src={process.env.PUBLIC_URL + '/audio/' + currentSong.filepath} onTimeUpdate={(e)=>{
+                        setCurrentTime(e.target.currentTime)
+                        }}></audio>
+                </div>
                 <div className='audio-player-full'>
                     <div className='audio-player-top-bar'>
-                        <div onClick={() => {isPlaying ? setIsPlaying(false) : setIsPlaying(true)}}>
+                        <div onClick={() => {
+                            isPlaying ? setIsPlaying(false) : setIsPlaying(true);
+                            isPlaying ? document.getElementById('audio').pause() : document.getElementById('audio').play()
+                            }}>
                             {isPlaying ? <img src={pausebutton} width='90' alt='pause'/> : <img src={playbutton} width='90' alt='play'/>}
                         </div>
                         <div className='audio-player-currentsonginfo'>
@@ -37,37 +47,52 @@ const MyMusic = () => {
                         <div className='audio-player-track-nav-button-container'>
                             <div className='audio-player-navbutton' onClick={()=>{
                                 currentSong.number === 1 ? setCurrentSong(musicAudioData.tracks[musicAudioData.tracks.length - 1]) : setCurrentSong(musicAudioData.tracks[currentSong.number - 2])
+                                setIsPlaying(true);
+                                setTimeout(()=>{document.getElementById('audio').play()}, 50)
                                 }}>
                                     <img src={prevbutton} width='28' alt='prev'/>
                                 </div>
                             <div className='audio-player-navbutton' onClick={()=>{
                                 currentSong.number === musicAudioData.tracks.length ? setCurrentSong(musicAudioData.tracks[0]) : setCurrentSong(musicAudioData.tracks[currentSong.number])
+                                setIsPlaying(true);
+                                setTimeout(()=>{document.getElementById('audio').play()}, 50)
                                 }}>
                                     <img src={nextbutton} width='28' alt='next'/>
                                 </div>
                         </div>
                         <div className='audio-player-progressbar-container'>
-                            <div></div>
-                            <div></div>
-                            <input type='range' step='0.01' className='audio-player-progressbar'></input>
+                            <input type='range' step='0.01' className='audio-player-progressbar' value={(100 / document.getElementById("audio").duration) * currentTime} onChange={(e) => {
+                                e.preventDefault(); 
+                                const duration = document.getElementById("audio").duration
+                                document.getElementById("audio").currentTime = (e.target.value / 100) * duration; 
+                            }}>
+                            </input>
                         </div>
-                        <div className='audio-player-time'>3:33 / 3:33</div>
+                        <div className='audio-player-time'>
+                            {timeFormat(currentTime)} / {currentSong.duration}
+                        </div>
                         <div className='audio-player-volume' onClick={() => {isMuted ? setIsMuted(false) : setIsMuted(true)}}>
                             {isMuted ? <img src={volumebutton} width='24' alt='volume'/> : <img src={mutebutton} width='24' alt='mute'/>}
                         </div>
                     </div>
                     <div className='audio-player-track-list'>
                         {musicAudioData.tracks.map((track) => {
-                            return <div key={track.number} className='audio-player-track' onClick={()=>{setCurrentSong(musicAudioData.tracks[track.number - 1])}}>
+                            return <div key={track.number} className='audio-player-track' onClick={()=>{
+                                        setCurrentSong(musicAudioData.tracks[track.number - 1]);
+                                        setIsPlaying(true);
+                                        setTimeout(()=>{document.getElementById('audio').play()}, 50)
+                                    }}>
                                         <div>
-                                            <div>{track.number}. {track.artist} - {track.title}</div>
+                                            <div>{track.number}. {track.artist} {track.title !== '' ? ' - ' : null} {track.title}</div>
                                         </div>
                                         <div>{track.duration}</div>
                                     </div> 
                         })}
                     </div>
                     <div className='audio-player-audio-visualiser'>
-                        <div></div>
+                            <div id="content">
+                                <canvas id="canvas"></canvas>
+                            </div>
                     </div>
                 </div>
             </div>

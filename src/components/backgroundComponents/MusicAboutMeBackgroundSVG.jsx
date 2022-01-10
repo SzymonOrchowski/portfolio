@@ -1,5 +1,5 @@
 import React from 'react';
-import useWindowDimensions from '../../utils/utils';
+import {useWindowDimensions} from '../../utils/utils';
 
 const MusicAboutMeBackgroundSVG = () => {
     const width = useWindowDimensions().width - 40

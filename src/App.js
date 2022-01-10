@@ -11,7 +11,7 @@ import WebDevPage from './components/WebDevPage';
 import MusicPage from './components/MusicPage';
 import DiscographyPage from './components/DiscographyPage';
 import ContactPage from './components/ContactPage';
-import useWindowDimensions from './utils/utils';
+import {useWindowDimensions} from './utils/utils';
 
 const minimalWidthToShowMenu = 1000
 let mainWidth

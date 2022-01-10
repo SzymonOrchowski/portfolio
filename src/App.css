@@ -793,14 +793,15 @@ min-width: 25px;
 }
 
 .audio-player-track-list {
-  /* border: solid 1px yellow; */
+  margin-top: 4px;
+  border: solid 1px #333333;
   overflow: scroll;
   height: calc((100% - 125px) * 0.6);
 }
 
 .audio-player-track {
   margin-top: 2px;
-  padding: 4px;
+  padding: 4px 15px 4px 10px;
   border-color: #616165;
   border-width: 0px 0px 1px 0px;
   border-style: solid;
@@ -817,7 +818,35 @@ min-width: 25px;
 
 
 .audio-player-audio-visualiser {
-  /* border: solid 1px green; */
+  border: solid 1px green;
   height: calc((100% - 125px) * 0.4);
   display: flex
+}
+
+/* 
+........... 
+*/
+
+#content {
+  width: 100%;
+  height: 100%;
+}
+
+#thefile {
+  background-color: #616165;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+
+audio {
+  left: 10px;
+  bottom: 10px;
+  width: calc(100% - 20px);
 }

@@ -1,79 +1,79 @@
 {"tracks" : [
     {
         "number" : 1,
-        "filepath" : "/audio/..",
+        "filepath" : "EstherKoch-Symptoms(BBCSoundFirst).mp3",
         "artist" : "Esther Koch",
         "title" : "Symptoms (BBC Sound First)",
-        "duration" : "3:33"
+        "duration" : "3:48"
     },
     {
         "number" : 2,
-        "filepath" : "/audio/..",
+        "filepath" : "SoundDesignAndMusicForTheScriptFromBBCSoundFirst.mp3",
         "artist" : "Sound Design and Music for the script from BBC Sound First Competition",
         "title" : "",
-        "duration" : "3:33"
+        "duration" : "4:41"
     },
     {
         "number" : 3,
-        "filepath" : "/audio/..",
+        "filepath" : "SzymonOrchowski-CentralStation.mp3",
         "artist" : "Szymon Orchowski",
         "title" : "Central station",
-        "duration" : "3:33"
+        "duration" : "1:28"
     },
     {
         "number" : 4,
-        "filepath" : "/audio/..",
+        "filepath" : "SzymonOrchowski-BleedingFingers.mp3",
         "artist" : "Szymon Orchowski",
         "title" : "Bleeding fingers",
-        "duration" : "3:33"
+        "duration" : "2:06"
     },
     {
         "number" : 5,
-        "filepath" : "/audio/..",
+        "filepath" : "SzymonOrchowski-Sextet.mp3",
         "artist" : "Szymon Orchowski",
         "title" : "Sextet",
-        "duration" : "3:33"
+        "duration" : "2:20"
     },
     {
         "number" : 6,
-        "filepath" : "/audio/..",
+        "filepath" : "SzymonOrchowski-Soundscape.mp3",
         "artist" : "Szymon Orchowski",
         "title" : "Soundscape",
-        "duration" : "3:33"
+        "duration" : "2:13"
     },
     {
         "number" : 7,
-        "filepath" : "/audio/..",
+        "filepath" : "SzymonOrchowski-OrchestralPiece.mp3",
         "artist" : "Szymon Orchowski",
         "title" : "Orchestral Piece op. 12",
-        "duration" : "3:33"
+        "duration" : "1:57"
     },
     {
         "number" : 8,
-        "filepath" : "/audio/..",
+        "filepath" : "FlyingMoses-DownTheHill.mp3",
         "artist" : "Flying Moses",
         "title" : "Down The Hill",
-        "duration" : "3:33"
+        "duration" : "4:24"
     },
     {
         "number" : 9,
-        "filepath" : "/audio/..",
+        "filepath" : "FlyingMoses-Waiting.mp3",
         "artist" : "Flying Moses",
         "title" : "Waiting",
-        "duration" : "3:33"
+        "duration" : "4:58"
     },
     {
         "number" : 10,
-        "filepath" : "/audio/..",
+        "filepath" : "FlyingMoses-TheMacabrey.mp3",
         "artist" : "Flying Moses",
         "title" : "The Macabrey",
-        "duration" : "3:33"
+        "duration" : "4:25"
     },
     {
         "number" : 11,
-        "filepath" : "/audio/..",
+        "filepath" : "AdamSiemienczyk-Sanja.mp3",
         "artist" : "Adam Siemienczyk",
         "title" : "Sanja",
-        "duration" : "3:33"
+        "duration" : "41:52"
     }
 ]}

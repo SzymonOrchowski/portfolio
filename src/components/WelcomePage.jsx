@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import useWindowDimensions from '../utils/utils';
+import {useWindowDimensions} from '../utils/utils';
 
 const WelcomePage = ({setCurrentPage}) => {
 

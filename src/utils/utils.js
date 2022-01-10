@@ -10,7 +10,7 @@ function getWindowDimensions() {
   };
 }
 
-export default function useWindowDimensions() {
+export const useWindowDimensions = () => {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
   
     useEffect(() => {
@@ -23,3 +23,12 @@ export default function useWindowDimensions() {
   
     return windowDimensions;
   }
+
+export const timeFormat = (sec) => {
+  let str = ''
+  str += Math.floor(sec / 60).toString()
+  str += ':'
+  if (Math.floor(sec % 60) < 10) str += '0'
+  str += Math.floor(sec % 60).toString()
+  return str
+}
