@@ -1,4 +1,6 @@
 import React from 'react';
+import VideoCard from '../VideoCard';
+import videosData from '../../data/musicSoundDesign.json'
 
 const SoundDesign = () => {
     return (
@@ -10,9 +12,14 @@ const SoundDesign = () => {
             </header>
             <main>
                 <p>
-                    My approach to writing music that serves the video.
+                    Not only music is my passion. Creating imaginary worlds from the sound perspective is my another huge adventure.
                 </p>
             </main>
+            <div id="sounddesign-videos-container">
+                {videosData.videos.map((video) => {
+                    return <VideoCard className='sounddesign-videos' key={video.id} data={video}/>
+                })}
+            </div>
         </div>
     );
 };

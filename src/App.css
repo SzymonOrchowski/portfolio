@@ -746,6 +746,28 @@ min-width: 25px;
   padding: 20px 20px 40px 30px
 }
 
+#sounddesign-videos-container {
+  height: 80%;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sounddesign-videos {
+  width: 100%;
+}
+
+.sounddesign-videos .video-card {
+  height: 100%;
+}
+
+.sounddesign-videos .video-card-player {
+  height: 100%;
+  width: 100%;
+  border:none;
+}
+
 /*   MusicContact   */
 
 #music-contact {
