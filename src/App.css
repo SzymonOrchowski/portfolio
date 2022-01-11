@@ -715,6 +715,28 @@ min-width: 25px;
   padding: 20px 20px 40px 30px
 }
 
+#filmscoring-videos-container {
+  height: 80%;
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.filmscoring-videos {
+  width: 100%;
+}
+
+.filmscoring-videos .video-card {
+  height: 100%;
+}
+
+.filmscoring-videos .video-card-player {
+  height: 100%;
+  width: 100%;
+  border:none;
+}
+
 /*   SoundDesign   */
 
 #sound-design {
