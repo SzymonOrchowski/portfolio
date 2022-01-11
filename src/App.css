@@ -796,7 +796,8 @@ min-width: 25px;
   margin-top: 4px;
   border: solid 1px #333333;
   overflow: scroll;
-  height: calc((100% - 125px) * 0.6);
+  /* height: calc((100% - 125px) * 0.6); */
+  height: calc((100% - 125px) * 1);
 }
 
 .audio-player-track {
