@@ -21,7 +21,7 @@ const MyWorks = () => {
                     <div id='my-works-videocards-container'>
                         {videosData.videos.map((video, index) => {
                             if (index >= (pageNumber - 1) * 6 && index < pageNumber * 6) {
-                                return <VideoCard key={video.id} data={video}/>
+                                return <VideoCard className='myworks-videos' key={video.id} data={video}/>
                             }
                         })}
                     </div>

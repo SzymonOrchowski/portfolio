@@ -1,4 +1,6 @@
 import React from 'react';
+import VideoCard from '../VideoCard';
+import videosData from '../../data/musicForMarketing.json'
 
 const MusicForMarketing = () => {
     return (
@@ -13,6 +15,11 @@ const MusicForMarketing = () => {
                     Examples of my work as a composer of commercial music and sound designer.
                 </p>
             </main>
+            <div id="music-for-marketing-videos-container">
+                {videosData.ads.map((video) => {
+                    return <VideoCard className='marketing-videos' key={video.id} data={video}/>
+                })}
+            </div>
         </div>
     );
 };
