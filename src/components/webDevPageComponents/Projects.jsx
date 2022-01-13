@@ -1,4 +1,6 @@
 import React from 'react';
+import projectsData from '../../data/devProjects.json'
+import ProjectCard from './ProjectCard';
 
 const Projects = () => {
     return (
@@ -8,12 +10,11 @@ const Projects = () => {
                     My Projects
                 </h1>
             </header>
-            <div>NC Backend project</div>
-            <div>NC Frontend project</div>
-            <div>Climbly backend</div>
-            <div>Climbly frontend</div>
-            <div>Portfolio website</div>
-            <div>Noughts and crosses game</div>
+            <div id='web-dev-projects-all'>
+                {projectsData.projects.map((project, index)=>{
+                    return <ProjectCard project={project} index={index}/>
+                })}
+            </div>
         </div>
     );
 };

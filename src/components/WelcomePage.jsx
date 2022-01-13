@@ -1,8 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {useWindowDimensions} from '../utils/utils';
+import WelcomePageBacgroundSVG from './backgroundComponents/WelcomePageBacgroundSVG';
 
 const WelcomePage = ({setCurrentPage}) => {
+    console.log(useWindowDimensions())
 
     useEffect(()=>{
         setCurrentPage('WelcomePage')
@@ -10,6 +12,7 @@ const WelcomePage = ({setCurrentPage}) => {
 
     return (
         <div id='WelcomePageContainer'>
+            {/* <WelcomePageBacgroundSVG /> */}
             <div id='WelcomeBox'>
                 <div id='welcomeBoxHeaderBox'>
                     <header>

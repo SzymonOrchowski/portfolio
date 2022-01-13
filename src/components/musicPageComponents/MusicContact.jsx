@@ -1,13 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
+import emailjs from 'emailjs-com'
+import ContactForm from '../ContactForm';
 
 const MusicContact = () => {
     return (
         <div id='music-contact'>
-            <header id='sound-design-text-header'>
-                <h1>
-                    Music Contact
-                </h1>
-            </header>
+            <ContactForm />
         </div>
     );
 };

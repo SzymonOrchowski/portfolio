@@ -1,0 +1,54 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "name": "My portfolio website",
+            "subheading": "",
+            "description": "This portfolio website is made in React.js with some additional usage of EmailJs and three.js frameworks and styled in CSS.",
+            "repoLink": "",
+            "imageLink": "",
+            "releaseDate": "",
+            "visible": true
+        },
+        {
+            "id": 2,
+            "name": "Board Games World",
+            "subheading": "Northcoders Front-end project",
+            "description": "Front-end project of a web application made in React.js / HTML / CSS, that let users exploring and interacting with data from HouseOfGames API - my previous project from Northcoders Bootcamp",
+            "repoLink": "https://github.com/SzymonOrchowski/nc-games",
+            "imageLink": "",
+            "releaseDate": "",
+            "visible": true
+        },
+        {
+            "id": 3,
+            "name": "House of Games",
+            "subheading": "Northcoders Back-end project",
+            "description": "Back-end project focusing on methods for dealing with asynchronous programming, RESTful APIs and databases, as well as Express and SQL. Hosted version available through my GitHub account.",
+            "repoLink": "https://github.com/SzymonOrchowski/be-nc-board-games",
+            "imageLink": "",
+            "releaseDate": "",
+            "visible": true
+        },
+        {
+            "id": 4,
+            "name": "Climbly",
+            "subheading": "Northcoders Final Project",
+            "description": "a full-stack project of an mobile app, that is personalized version of a catalog / informational place of hills in the UK build in React Native, Express and Firebase among other frameworks and technologies.",
+            "repoLink": "https://github.com/SzymonOrchowski/climbly",
+            "imageLink": "",
+            "releaseDate": "",
+            "visible": true
+        },
+        {
+            "id": 5,
+            "name": "Noughts and crosses 3D",
+            "subheading": "",
+            "description": "",
+            "repoLink": "",
+            "imageLink": "",
+            "releaseDate": "",
+            "visible": false
+        }
+    ]
+}
