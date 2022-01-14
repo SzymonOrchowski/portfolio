@@ -16,8 +16,6 @@ const DevAboutMeBackgroundSVG = () => {
     Z
     `
 
-    // console.log(width, ' x ', height, ' ',svgpath1)
-
     return (
             <div id='dev-about-me-svg-background'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox={svgViewBox1}>

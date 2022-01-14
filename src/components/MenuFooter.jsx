@@ -5,8 +5,12 @@ import iconmonstrGithub from '../img/icons/iconmonstrGithub.png'
 const MenuFooter = () => {
     return (
         <div id='menu-footer-flex'>
-            <div><img src={iconmonstrLinkedin} alt='LinkedIn Link' width='35' height='35'/></div>
-            <div><img src={iconmonstrGithub} alt='Github Link' width='35' height='35'/></div>
+            <div>
+                <img id='menu-footer-linkedin-icon' src={iconmonstrLinkedin} alt='LinkedIn Link' width='35' height='35' onClick={()=>{window.open('https://www.linkedin.com/in/szymon-orchowski-a52923197/')}}/>
+            </div>
+            <div>
+                <img id='menu-footer-github-icon' src={iconmonstrGithub} alt='Github Link' width='35' height='35' onClick={()=>{window.open('https://github.com/SzymonOrchowski/')}}/>
+            </div>
         </div>
     );
 };

@@ -38,6 +38,22 @@ body {
   justify-content: space-around;
 }
 
+#menu-footer-linkedin-icon {
+  opacity: 0.13
+}
+
+#menu-footer-linkedin-icon:hover {
+  opacity: 0.5
+}
+
+#menu-footer-github-icon {
+  opacity: 0.14
+}
+
+#menu-footer-github-icon:hover {
+  opacity: 0.5
+}
+
 #menu-button {
   position: absolute;
   left: calc(100vw - 60px - 14px);
@@ -69,6 +85,7 @@ body {
   color: #1D1D1D;
   background-color: #616165;
   cursor: pointer;
+  /* transition: 0.3s; */
 }
 
 .menuItemButtonWithNoPadding {
@@ -87,6 +104,7 @@ body {
 .menuItemButtonWithNoPadding:hover {
   color: #1D1D1D;
   background-color: #616165;
+  /* transition: 0.3s; */
 }
 
 .menuItemButtonLink {
@@ -101,6 +119,7 @@ body {
 .menuItemButtonLink:hover {
   color: #1D1D1D;
   background-color: #616165;
+  /* transition: 0.3s; */
 }
 
 /*          */
@@ -276,6 +295,7 @@ body {
 .PortfolioButton:hover {
   background-color: #ECC05B;
   color: #1D1D1D;
+  transition: 0.3s;
 }
 
 #welcomeBoxContactButtonBox {
@@ -296,6 +316,7 @@ body {
   margin: 10px;
   width: 280px;
   text-align: center;
+  transition: 0.3s;
 }
 
 #ContactMeButton:hover {
@@ -375,18 +396,60 @@ body {
 
 /* Education */
 
+#web-dev-education{
+  position: relative;
+}
+
+#web-dev-education-background{
+  position: absolute;
+  top: 40px
+}
+
+#nc-image {
+  width: 50%;
+  opacity: 0.8;
+}
+#nc-logo-image {
+  width: 50%;
+  opacity: 0.7;
+}
+
+@media (max-width: 800px) {
+  #nc-logo-image {
+    width: 100%;
+    opacity: 0.5;
+  }
+}
+
 #web-dev-education-container {
-  background-color: #1D1D1D;
+  /* border: green 1px solid; */
+  position: relative;
+  background-color: transparent;
   margin: 0px;
   width: calc(100% - 40px);
   height: calc(100vh - 40px);
   padding: 20px
 }
 
+
 #web-dev-education-container h1 {
   margin: 10px 0px 30px 0px
 }
 
+#web-dev-education-northcoders {
+  /* border: green 1px solid; */
+  height: 63%;
+  max-width: 800px
+}
+
+#web-dev-education-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#web-dev-education-description {
+
+}
 
 /* Projects */
 
@@ -429,21 +492,26 @@ body {
   border-width: 0px 0px 1px 0px;
   flex: 2;
   padding: 20px;
+  padding: 20px 0px 20px 0px
 }
 
 #project-name {
- margin: 10px 0px 20px 0px;
- font-size: 1.5em;
- font-weight: 800;
+  /* border: 1px solid green; */
+  background-color: #222222;
+  margin: 10px 0px 20px 0px;
+  padding: 2px 0px 4px 20px;
+  font-size: 1.6em;
+  font-weight: 800;
 }
 
 #project-subheading {
+  padding: 0px 0px 0px 20px;
   margin: 5px 0px 20px 0px;
   
 }
 
 #project-description {
-  
+  padding: 0px 0px 0px 20px;
 }
 
 #project-run-app-button {
@@ -451,7 +519,7 @@ body {
 }
 
 #project-repo {
-  
+  padding: 0px 0px 0px 20px;
 }
 
 
@@ -487,7 +555,7 @@ body {
 border-width: 0px 0px 1px 1px;
 border-color: #616165;
 border-style: solid;
-margin: 2px;
+margin: 8px 2px 2px 2px;
 padding: 3px 3px 3px 10px;
 }
 
@@ -573,7 +641,7 @@ flex: 1
   padding: 10px;
   margin-bottom: 30px;
   margin-top: 6px;
-  width: calc(99% - 15px);
+  width: calc(98% - 15px);
   background-color: #1D1D1D;
   color: #FFFFFF;
   border-color: #616165;
@@ -585,7 +653,7 @@ flex: 1
   padding: 10px;
   margin-bottom: 30px;
   margin-top: 6px;
-  width: calc(99% - 15px);
+  width: calc(98% - 15px);
   background-color: #1D1D1D;
   color: #FFFFFF;
   border-color: #616165;
@@ -598,12 +666,12 @@ flex: 1
   padding: 10px;
   margin-bottom: 30px;
   margin-top: 6px;
-  width: calc(99% - 15px);
+  width: calc(98% - 15px);
   background-color: #1D1D1D;
   color: #FFFFFF;
   border-color: #616165;
   border-style: solid;
-  border-width: 1px 0px 1px 1px;
+  border-width: 1px 1px 1px 1px;
 }
 
 #contact-send-button {
@@ -831,6 +899,7 @@ min-width: 25px;
 
 .my-discography-album-card:hover .my-discography-album-card-inner {
   transform: rotateY(180deg);
+  transition: 0.3s;
 }
 
 .my-discography-album-card-front {
@@ -878,22 +947,33 @@ min-width: 25px;
   margin-bottom: 5px;
 }
 
-.my-discography-album-card-listen {
-  color: #AAAAAA;
+.my-discography-album-card-listen-container {
+  margin: 10px 0px 0px 0px;
+  /* border: red 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .my-discography-album-card-listen {
+  height: min-content;
+  margin-right: 15px;
+  /* border: red 1px solid; */
+  color: #AAAAAA;
   font-size: 0.9em;
 }
 
-.my-discography-album-card-spotify {
-  margin: 20px 0px 0px 0px;
-  cursor: pointer;
-}
 
 .my-discography-album-card-spotify {
-  margin: 20px 0px 0px 0px;
+  height: min-content;
+  /* border: red 1px solid; */
+  margin: 10px 0px 0px 0px;
   cursor: pointer;
+  filter: grayscale(1)
+}
+
+.my-discography-album-card-spotify:hover {
+  filter: grayscale(0)
 }
 
 /*   MusicForMarketing   */
@@ -1125,6 +1205,7 @@ min-width: 25px;
   background-color: #ECC05B;
   color: #000000;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 

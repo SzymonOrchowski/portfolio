@@ -26,8 +26,10 @@ const MyDiscography = () => {
                                 <div className='my-discography-album-card-released'>Released:</div>
                                 <div className='my-discography-album-card-released2'>{album.releasedBy} {album.releasedYear}</div>
                                 <div className='my-discography-album-card-myRole'>{album.myRole}</div>
-                                <div className='my-discography-album-card-listen'>Listen on Spotify:</div>
-                                <div className='my-discography-album-card-spotify' onClick={()=>{window.open(album.spotifyLink)}}><img src={spotifyIcon} width='60' alt='Play on Spotify'/></div>
+                                <div className='my-discography-album-card-listen-container'>
+                                    <div className='my-discography-album-card-listen'>Listen on Spotify:</div>
+                                    <div className='my-discography-album-card-spotify' onClick={()=>{window.open(album.spotifyLink)}} ><img src={spotifyIcon} width='60' alt='Play on Spotify'/></div>
+                                </div>
                             </div>
                         </div>
                     </div>

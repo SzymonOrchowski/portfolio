@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com'
+import React from 'react';
 import ContactForm from '../ContactForm';
 
 const MusicContact = () => {
     return (
-        <div id='music-contact'>
-            <ContactForm />
+        <div id='web-dev-contact-container'>
+            <div id='web-dev-contact-form-container'>
+                <ContactForm />
+            </div>
+            <div id='web-dev-contact-image-container'>
+                <img src={process.env.PUBLIC_URL + '/img/backgrounds/piano.jpg'} alt='PianoKeyboard'/>
+            </div>
         </div>
     );
 };

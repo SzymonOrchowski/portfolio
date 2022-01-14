@@ -1,7 +1,7 @@
-import React, { useRef, useState, Suspense } from 'react';
+import React, { useRef, Suspense } from 'react';
 import * as THREE from 'three' 
 import { OrbitControls } from '@react-three/drei'
-import { Canvas, useFrame, useLoader } from '@react-three/fiber'
+import { Canvas, useLoader, useFrame } from '@react-three/fiber'
 import { TextureLoader } from 'three';
 
 import CSSLogo from '../../img/techIcons/CSS.png'
@@ -19,13 +19,10 @@ import PostgreSQLLogo from '../../img/techIcons/PostgreSQL.png'
 import ReactLogo from '../../img/techIcons/React.png'
 import SQLLogo from '../../img/techIcons/SQL.png'
 
-const LogosSphere = () => {
-
-}
-
 const Box = (props) => {
     const mesh = useRef()
     const [map] = useLoader(TextureLoader, [props.texture])
+
 
     return (
       <mesh {...props} ref={mesh}>
@@ -35,9 +32,40 @@ const Box = (props) => {
     )
   }
 
-const SkillsSphere = () => {
+const LogosGroup = () => {
     const m = 1.5;
+    const group = useRef()
+    useFrame((state, delta) => ([
+        group.current.rotation.y += 0.002, 
+        group.current.rotation.z *= 0
+    ]))
 
+    return (
+        <>
+            <group ref={group}>
+                <Box position={[-1*m, -1*m, -1*m]} texture={CSSLogo} />
+                <Box position={[-1*m, 1*m, -1*m]} texture={DOMLogo}/>
+                <Box position={[1*m, 1*m, -1*m]} texture={ExpressLogo}/>
+                <Box position={[1*m, -1*m, -1*m]} texture={FirebaseLogo}/>
+
+                <Box position={[-1*m, -1*m, 1*m]} texture={GitHubLogo}/>
+                <Box position={[-1*m, 1*m, 1*m]} texture={HerokuLogo}/>
+                <Box position={[1*m, 1*m, 1*m]} texture={HTMLLogo}/>
+                <Box position={[1*m, -1*m, 1*m]} texture={JestLogo}/>
+
+                <Box position={[-Math.sqrt(3)*m, 0*m, 0*m]} texture={JSLogo}/>
+                <Box position={[0*m, Math.sqrt(3)*m, 0*m]} texture={NodeJSLogo}/>
+                <Box position={[Math.sqrt(3)*m, 0*m, 0*m]} texture={npmLogo}/>
+                <Box position={[0*m, -Math.sqrt(3)*m, 0*m]} texture={PostgreSQLLogo}/>
+
+                <Box position={[0*m, 0*m, Math.sqrt(3)*m]} texture={ReactLogo}/>
+                <Box position={[0*m, 0*m, -Math.sqrt(3)*m]} texture={SQLLogo}/> 
+            </group>
+        </>
+    )
+}
+
+const SkillsSphere = () => {
     return (
         <div id='skills-sphere-container'>
                 <Canvas>
@@ -45,26 +73,8 @@ const SkillsSphere = () => {
                         <>
                             <OrbitControls enableZoom={false} enablePan={true} enableRotate={true} panSpeed={0.5} />
                             <ambientLight />
-                            <pointLight position={[10, 10, 10]} />
-                            <group>
-                                <Box position={[-1*m, -1*m, -1*m]} texture={CSSLogo} />
-                                <Box position={[-1*m, 1*m, -1*m]} texture={DOMLogo}/>
-                                <Box position={[1*m, 1*m, -1*m]} texture={ExpressLogo}/>
-                                <Box position={[1*m, -1*m, -1*m]} texture={FirebaseLogo}/>
-
-                                <Box position={[-1*m, -1*m, 1*m]} texture={GitHubLogo}/>
-                                <Box position={[-1*m, 1*m, 1*m]} texture={HerokuLogo}/>
-                                <Box position={[1*m, 1*m, 1*m]} texture={HTMLLogo}/>
-                                <Box position={[1*m, -1*m, 1*m]} texture={JestLogo}/>
-
-                                <Box position={[-Math.sqrt(3)*m, 0*m, 0*m]} texture={JSLogo}/>
-                                <Box position={[0*m, Math.sqrt(3)*m, 0*m]} texture={NodeJSLogo}/>
-                                <Box position={[Math.sqrt(3)*m, 0*m, 0*m]} texture={npmLogo}/>
-                                <Box position={[0*m, -Math.sqrt(3)*m, 0*m]} texture={PostgreSQLLogo}/>
-
-                                <Box position={[0*m, 0*m, Math.sqrt(3)*m]} texture={ReactLogo}/>
-                                <Box position={[0*m, 0*m, -Math.sqrt(3)*m]} texture={SQLLogo}/> 
-                            </group>
+                            <pointLight position={[10, 10, 10]} intensity='0'/>
+                            <LogosGroup/>
                         </>
                     </Suspense>
                 </Canvas>
