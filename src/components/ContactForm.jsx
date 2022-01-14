@@ -26,19 +26,23 @@ const ContactForm = () => {
             </header>
             <form id='contact-form' onSubmit={sendEmail}>
 
-                <label>Name:</label>
+                <label>Name: </label>
+                <br/>
                 <input type='text' name='name' required/>
-
-                <label>E-mail:</label>
+            <br/>
+                <label>E-mail: </label>
+                <br/>
                 <input type="email" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
-
-                <label>Subject:</label>
+            <br/>
+                <label>Subject: </label>
+                <br/>
                 <input type='text' name='subject' required/>
-
-                <label>Message:</label>
-                <textarea name="message" rows='4' required/>
-
-                <input type="submit" value='Send' />
+            <br/>
+                <label>Message: </label>
+                <br/> 
+                <textarea name="message" rows='10' required/>
+            <br/>
+                <input id="contact-send-button" type="submit" value='Send' />
                 
             </form>
             <div>

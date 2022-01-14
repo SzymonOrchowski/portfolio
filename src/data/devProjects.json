@@ -5,7 +5,8 @@
             "name": "My portfolio website",
             "subheading": "",
             "description": "This portfolio website is made in React.js with some additional usage of EmailJs and three.js frameworks and styled in CSS.",
-            "repoLink": "",
+            "repoLink": "https://github.com/SzymonOrchowski/portfolio",
+            "deployedLink": "",
             "imageLink": "/PortfolioWebsiteProject.jpg",
             "releaseDate": "",
             "visible": true
@@ -16,6 +17,7 @@
             "subheading": "Northcoders Front-end project",
             "description": "Front-end project of a web application made in React.js / HTML / CSS, that let users exploring and interacting with data from HouseOfGames API - my previous project from Northcoders Bootcamp",
             "repoLink": "https://github.com/SzymonOrchowski/nc-games",
+            "deployedLink": "",
             "imageLink": "/FrontEndProject.jpg",
             "releaseDate": "",
             "visible": true
@@ -26,6 +28,7 @@
             "subheading": "Northcoders Back-end project",
             "description": "Back-end project focusing on methods for dealing with asynchronous programming, RESTful APIs and databases, as well as Express and SQL. Hosted version available through my GitHub account.",
             "repoLink": "https://github.com/SzymonOrchowski/be-nc-board-games",
+            "deployedLink": "",
             "imageLink": "/BackEndProject.jpg",
             "releaseDate": "",
             "visible": true
@@ -36,6 +39,7 @@
             "subheading": "Northcoders Final Project",
             "description": "a full-stack project of an mobile app, that is personalized version of a catalog / informational place of hills in the UK build in React Native, Express and Firebase among other frameworks and technologies.",
             "repoLink": "https://github.com/SzymonOrchowski/climbly",
+            "deployedLink": "",
             "imageLink": "/Climbly.jpg",
             "releaseDate": "",
             "visible": true
@@ -46,6 +50,7 @@
             "subheading": "",
             "description": "",
             "repoLink": "",
+            "deployedLink": "",
             "imageLink": "/NoughtsAndCrossesGame.jpg",
             "releaseDate": "",
             "visible": false

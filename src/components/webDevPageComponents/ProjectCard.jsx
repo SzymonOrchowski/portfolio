@@ -10,16 +10,21 @@ const ProjectCard = ({project, index}) => {
             : null
             }
             <div id='project-card-description'>
-                <div>
+                <div id='project-name'>
                     {project.name}
                 </div>
-                <div>
+                <div id='project-subheading'>
                     {project.subheading}
                 </div>
-                <div>
+                <div id='project-description'>
                     {project.description}
                 </div>
-                <div>
+                {project.deployedLink !== "" ? 
+                    <div id='project-run-app-button'>
+                        {project.deployedLink}
+                    </div>
+                : null}
+                <div id='project-repo'>
                     {project.repoLink}
                 </div>
             </div>

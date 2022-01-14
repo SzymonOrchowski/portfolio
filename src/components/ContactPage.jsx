@@ -8,10 +8,7 @@ const ContactPage = ({setCurrentPage}) => {
     },[])
 
     return (
-        <div>
-            <header>
-                ContactPage
-            </header>
+        <div id="Contact-Page">
             <ContactForm />
         </div>
     );
