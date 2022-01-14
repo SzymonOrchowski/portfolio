@@ -412,13 +412,18 @@ body {
 
 #project-card-container {
   height: 40%;
-  border: green solid 1px;
+  /* border: green solid 1px; */
   display: flex;
 }
 
-#project-card-image {
+#project-card-image-div {
+  overflow:hidden;
   flex: 1;
   border: blue solid 1px;
+}
+
+#project-card-image {
+  width: 100%;
 }
 
 #project-card-description {
@@ -490,6 +495,11 @@ flex: 1
 
 #web-dev-skills-top div {
   flex: 1
+}
+
+#skills-sphere-container{
+  /* border: 1px solid green; */
+  height: 100%;
 }
 
 /* WebDevContact */
@@ -1016,7 +1026,7 @@ min-width: 25px;
 
 
 .audio-player-audio-visualiser {
-  border: solid 1px green;
+  /* border: solid 1px green; */
   height: calc((100% - 125px) * 0.4);
   display: flex
 }

@@ -4,8 +4,8 @@ const ProjectCard = ({project, index}) => {
     return (
         <div id='project-card-container'>
             {index % 2 === 0 ? 
-            <div id='project-card-image'>
-                <img src={project.imageLink}/>
+            <div id='project-card-image-div'>
+                <img id='project-card-image' src={process.env.PUBLIC_URL + '/img/dev-projects' + project.imageLink}/>
             </div>
             : null
             }
@@ -24,8 +24,8 @@ const ProjectCard = ({project, index}) => {
                 </div>
             </div>
             {index % 2 === 1 ? 
-            <div id='project-card-image'>
-                <img src={project.imageLink}/>
+            <div id='project-card-image-div'>
+                <img id='project-card-image' src={process.env.PUBLIC_URL + '/img/dev-projects' + project.imageLink}/>
             </div>
             : null
             }
