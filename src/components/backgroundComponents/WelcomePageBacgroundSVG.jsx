@@ -6,7 +6,6 @@ const WelcomePageBacgroundSVG = () => {
     const height = useWindowDimensions().height * 1.1
     
     const svgViewBox1 = `0 0 ${width} ${height}`
-    console.log(svgViewBox1)
     
     const svgpath1 = `
     M 0,${height}

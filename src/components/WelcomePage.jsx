@@ -4,7 +4,6 @@ import {useWindowDimensions} from '../utils/utils';
 import WelcomePageBacgroundSVG from './backgroundComponents/WelcomePageBacgroundSVG';
 
 const WelcomePage = ({setCurrentPage}) => {
-    console.log(useWindowDimensions())
 
     useEffect(()=>{
         setCurrentPage('WelcomePage')
