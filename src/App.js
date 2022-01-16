@@ -9,7 +9,6 @@ import MainMenu from './components/MainMenu';
 import WelcomePage from './components/WelcomePage';
 import WebDevPage from './components/WebDevPage';
 import MusicPage from './components/MusicPage';
-import DiscographyPage from './components/DiscographyPage';
 import ContactPage from './components/ContactPage';
 import {useWindowDimensions} from './utils/utils';
 
@@ -85,7 +84,6 @@ function App() {
               <Route path='/' element={<WelcomePage setCurrentPage={setCurrentPage}/>} />
               <Route path='/webdev' element={<WebDevPage setCurrentPage={setCurrentPage} refs={refs}/>} />
               <Route path='/music' element={<MusicPage setCurrentPage={setCurrentPage} refs={refs}/>} />
-              <Route path='/discography' element={<DiscographyPage setCurrentPage={setCurrentPage}/>} />
               <Route path='/contact' element={<ContactPage setCurrentPage={setCurrentPage}/>} />
             </Routes>
           </div>
