@@ -66,6 +66,8 @@ const LogosGroup = () => {
 }
 
 const SkillsSphere = () => {
+    
+
     return (
         <div id='skills-sphere-container'>
                 <Canvas>

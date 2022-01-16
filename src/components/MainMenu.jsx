@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const renderMenu = (pageName, refs, fullScreenMenuIsVisible, setFullScreenMenuIsVisible) => {
     switch(pageName) {
-        case 'WelcomePage':
+        default:
             return (
                 <>
                     <div className='menuItemButtonWithNoPadding' onClick={() => {

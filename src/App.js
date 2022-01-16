@@ -13,8 +13,6 @@ import ContactPage from './components/ContactPage';
 import {useWindowDimensions} from './utils/utils';
 
 const minimalWidthToShowMenu = 1000
-let mainWidth
-window.innerWidth > minimalWidthToShowMenu ? mainWidth = `${window.innerWidth - 150}px` : mainWidth = '100vw'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('WelcomePage')

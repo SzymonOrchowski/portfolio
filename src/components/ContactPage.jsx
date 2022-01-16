@@ -5,7 +5,7 @@ const ContactPage = ({setCurrentPage}) => {
 
     useEffect(()=>{
         setCurrentPage('ContactPage')
-    },[])
+    },[setCurrentPage])
 
     return (
         <div id="Contact-Page">
