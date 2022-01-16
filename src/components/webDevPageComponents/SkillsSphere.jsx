@@ -7,7 +7,7 @@ import { TextureLoader } from 'three';
 import CSSLogo from '../../img/techIcons/CSS.png'
 import DOMLogo from '../../img/techIcons/DOM.png'
 import ExpressLogo from '../../img/techIcons/Express.png'
-import FirebaseLogo from '../../img/techIcons/Firebase.png'
+import FirebaseLogo from '../../img/techIcons/FirebaseLogo.png'
 import GitHubLogo from '../../img/techIcons/GitHub.png'
 import HerokuLogo from '../../img/techIcons/Heroku.png'
 import HTMLLogo from '../../img/techIcons/HTML.png'
@@ -35,7 +35,7 @@ const Box = (props) => {
 const LogosGroup = () => {
     const m = 1.5;
     const group = useRef()
-    useFrame((state, delta) => ([
+    useFrame(() => ([
         group.current.rotation.y += 0.002, 
         group.current.rotation.z *= 0
     ]))

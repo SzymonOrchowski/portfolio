@@ -15,7 +15,6 @@ const MyMusic = () => {
     const [currentTime, setCurrentTime] = useState(0)
     const [audio, setAudio] = useState()
     const [audioDuration, setAudioDuration] = useState(0)
-    const [audioVolume, setAudioVolume] = useState(1)
 
     return (
         <div id='my-music'>

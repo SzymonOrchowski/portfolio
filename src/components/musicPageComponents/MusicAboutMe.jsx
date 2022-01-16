@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import musicAboutMePhotoData from '../../data/musicAboutMePhotoData.json'
 import SlideAutoGallery from '../SlideAutoGallery';
 import {useWindowDimensions} from '../../utils/utils';
 import MusicAboutMeBackgroundSVG from '../backgroundComponents/MusicAboutMeBackgroundSVG';
 
 const MusicAboutMe = () => {
-    const [photoIndex, setPhotoIndex] = useState(0)
 
     return (
         <div id='music-about-me'>

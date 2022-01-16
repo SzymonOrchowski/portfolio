@@ -12,7 +12,7 @@ const Projects = () => {
             </header>
             <div id='web-dev-projects-all'>
                 {projectsData.projects.map((project, index)=>{
-                    return <ProjectCard project={project} index={index}/>
+                    return <ProjectCard key={project.id} project={project} index={index}/>
                 })}
             </div>
         </div>

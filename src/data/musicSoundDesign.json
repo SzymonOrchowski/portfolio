@@ -3,7 +3,8 @@
     [
         {
             "id": 1,
-            "link": "https://www.youtube.com/embed/9k_F8jK30oY"
+            "link": "https://www.youtube.com/embed/9k_F8jK30oY",
+            "hasDescription" : false
         }
     ]
 }

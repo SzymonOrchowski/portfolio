@@ -8,11 +8,11 @@ const ContactForm = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_f8zbuh7', 'template_fp3nlqq', e.target, "user_eY46KhzPufTceelW687zb")
-        .then((res)=>{
+        .then(()=>{
             setSendInfo(true)
             document.getElementById('music-contact-form').reset()
         })
-        .catch((err)=>{setSendInfoError(true)})
+        .catch(()=>{setSendInfoError(true)})
     }
     
     return (
