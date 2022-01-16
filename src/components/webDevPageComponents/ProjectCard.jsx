@@ -25,8 +25,8 @@ const ProjectCard = ({project, index}) => {
                 </div>
                 <div id='project-links'>
                     {project.deployedLink !== "" ? 
-                        <div id='project-run-app-button'>
-                            {project.deployedLink}
+                        <div id='project-run-app-button' onClick={()=>{window.open(project.deployedLink)}}>
+                            App
                         </div>
                     : null}
                     <div id='project-repo'>
