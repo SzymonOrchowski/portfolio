@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import VideoCard from '../VideoCard';
 import videosData from '../../data/myWorkVideos.json'
 
 const MyWorks = () => {
     const [pageNumber, setPageNumber] = useState(1)
+    const [videosCollection, setVideosCollection] = useState([])
     const pagesArray = []
+
+    useEffect(()=>{
+        setVideosCollection(videosData.videos)
+    },[])
+
     for (let i = 1; i <= Math.ceil(videosData.videos.length / 6); i++) {
         pagesArray.push(i)
     }
@@ -19,7 +25,7 @@ const MyWorks = () => {
                 </header>
                 <div>
                     <div id='my-works-videocards-container'>
-                        {videosData.videos.map((video, index) => {
+                        {videosCollection.map((video, index) => {
                             if (index >= (pageNumber - 1) * 6 && index < pageNumber * 6) {
                                 return <VideoCard className='myworks-videos' key={video.id} data={video}/>
                             }

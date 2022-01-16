@@ -8,7 +8,7 @@ const WebDevContact = () => {
                 <ContactForm />
             </div>
             <div id='web-dev-contact-image-container'>
-                <img src={process.env.PUBLIC_URL + '/img/backgrounds/pexels-negative-space-34153.jpg'}/>
+                <img src={process.env.PUBLIC_URL + '/img/backgrounds/pexels-negative-space-34153.jpg'} alt='computer keyboard'/>
             </div>
         </div>
     );

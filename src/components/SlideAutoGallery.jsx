@@ -7,14 +7,14 @@ const SlideAutoGallery = ({data}) => {
         setTimeout(
             ()=> {setIndex((prevIndex) => prevIndex === data.length - 1 ? 0 : prevIndex + 1)},
             4000)
-    },[index])
+    },[index, data.length])
 
     const overPhotoPath = data[index].name
 
     return (
         <div>
             <div id='photo-div'>
-                <img id='photo' src={process.env.PUBLIC_URL + overPhotoPath}></img>
+                <img id='photo' src={process.env.PUBLIC_URL + overPhotoPath} alt='me'></img>
             </div>
         </div>
     );

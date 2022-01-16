@@ -5,7 +5,7 @@ const VideoCard = ({data, className}) => {
     return (
         <div className={className}>
             <div className='video-card'>
-                    <iframe className='video-card-player' src={data.link + '?rel=0&modestbranding=1'} allow="fullscreen"></iframe>
+                    <iframe className='video-card-player' src={data.link + '?rel=0&modestbranding=1'} allow="fullscreen" title={data.id + ' ' + data.title}></iframe>
                 {data.hasDescription
                     ?
                         <div className='video-card-description'>

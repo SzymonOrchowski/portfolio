@@ -9,7 +9,7 @@ const WebDevPage = ({setCurrentPage, refs}) => {
 
     useEffect(()=>{
         setCurrentPage('WebDevPage')
-    },[])
+    },[setCurrentPage])
 
     return (
         <div id='web-dev-container'>

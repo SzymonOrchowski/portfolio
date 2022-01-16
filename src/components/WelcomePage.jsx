@@ -6,7 +6,7 @@ const WelcomePage = ({setCurrentPage}) => {
 
     useEffect(()=>{
         setCurrentPage('WelcomePage')
-    },[])
+    },[setCurrentPage])
 
     return (
         <div id='WelcomePageContainer'>

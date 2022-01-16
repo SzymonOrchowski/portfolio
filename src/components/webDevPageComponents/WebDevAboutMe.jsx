@@ -19,7 +19,7 @@ const WebDevAboutMe = () => {
                     </div>
                 </div>
                 <div id='web-dev-about-me-photo'>
-                    <img src={process.env.PUBLIC_URL + '/img/DevPhoto.jpg'} />
+                    <img src={process.env.PUBLIC_URL + '/img/DevPhoto.jpg'} alt='me'/>
                 </div>
             </div>
         </div>
