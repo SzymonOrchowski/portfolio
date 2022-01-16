@@ -12,7 +12,7 @@ const MusicPage = ({setCurrentPage, refs}) => {
 
     useEffect(()=>{
         setCurrentPage('MusicPage')
-    },[])
+    },[setCurrentPage])
 
     return (
         <div id='music-all-container'>
