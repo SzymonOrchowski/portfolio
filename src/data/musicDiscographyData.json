@@ -288,6 +288,26 @@
         "myRole" : "keyboards, assistant engineer",
         "albumCoverPath": "NataliaKukulska-8Plan.jpg",
         "spotifyLink" : "https://open.spotify.com/album/0MnhHRmJZUlyzztYA8UgR7?si=AlMaJqU0Tlq53d_frQoIEQ"
+    },
+    {
+        "id" : 29,
+        "artist" : "Idiothead",
+        "title" : "Przeciw Tobie",
+        "releasedBy" : "Idiothead",
+        "releasedYear" : "2020",
+        "myRole" : "mixing and mastering",
+        "albumCoverPath": "IdiotHead-PrzeciwTobie.jpg",
+        "spotifyLink" : "https://open.spotify.com/album/3OyrA7qJ94pvstzeuGwmF9?si=6y75NLqkRESmmXnTdQzYuw"
+    },
+    {
+        "id" : 30,
+        "artist" : "Pikes",
+        "title" : "We are hungry for the love from the 90's that we don't remember",
+        "releasedBy" : "Catch Them Live",
+        "releasedYear" : "2018",
+        "myRole" : "mixing and mastering",
+        "albumCoverPath": "Pikes-WeAreHungry.jpg",
+        "spotifyLink" : "https://open.spotify.com/album/6gQr86PzY6jyTp97NUiqrL?si=djttl_ceSp2Sk1tDfNBmdA"
     }
 ]
 }
