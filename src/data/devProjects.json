@@ -54,6 +54,17 @@
             "imageLink": "/NoughtsAndCrossesGame.jpg",
             "releaseDate": "",
             "visible": true
+        },
+        {
+            "id": 6,
+            "name": "Clockwise Spiral Generator",
+            "subheading": "Made in three.js",
+            "description": "This simple project comes up as a side result of my everyday coding practice. During solving one of Codewars's kata titled: The Clockwise Spiral I decided to code a visual presentation of a final algorithm.",
+            "repoLink": "https://github.com/SzymonOrchowski/clockwise_spiral_3d_generator",
+            "deployedLink": "https://3d-spiral-generator.netlify.app/",
+            "imageLink": "/SpiralGenerator.jpg",
+            "releaseDate": "",
+            "visible": true
         }
     ]
 }
