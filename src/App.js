@@ -106,7 +106,6 @@ const Menu = styled.div`
   justify-content: space-between;
   overflow: hidden;
   scrollbar-width: none;
-  overflow-y: scroll;
 `
 
 const FullScreenMenu = styled.div`

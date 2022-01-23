@@ -1038,6 +1038,7 @@ min-width: 25px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   overflow: scroll;
+  scrollbar-width: none;
 }
 
 
@@ -1232,6 +1233,7 @@ min-width: 25px;
   margin-top: 4px;
   border: solid 1px #333333;
   overflow: scroll;
+  scrollbar-width: none;
   /* height: calc((100% - 125px) * 0.6); */
   height: calc((100% - 125px) * 1);
 }
