@@ -1037,7 +1037,7 @@ min-width: 25px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  overflow: scroll;
+  overflow: hidden;
   scrollbar-width: none;
 }
 
@@ -1232,7 +1232,7 @@ min-width: 25px;
 .audio-player-track-list {
   margin-top: 4px;
   border: solid 1px #333333;
-  overflow: scroll;
+  overflow: hidden;
   scrollbar-width: none;
   /* height: calc((100% - 125px) * 0.6); */
   height: calc((100% - 125px) * 1);
