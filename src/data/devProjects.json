@@ -48,7 +48,7 @@
             "id": 5,
             "name": "Noughts and crosses",
             "subheading": "Made in three.js",
-            "description": "This is my attempt to make a 3d version of the Noughts and Crosses game. All of the graphics in this game are generated procedurally. It's just the alpha version now. Work in progress...",
+            "description": "This is my attempt to make a 3d version of the Noughts and Crosses game. All of the graphics in this game are generated procedurally. It's just the alpha version now. To spawn a figure use double-click. Work in progress...",
             "repoLink": "https://github.com/SzymonOrchowski/noughts_and_crosses_3d_game",
             "deployedLink": "https://noughts-and-crosses-3d-game.netlify.app/",
             "imageLink": "/NoughtsAndCrossesGame.jpg",
@@ -63,6 +63,17 @@
             "repoLink": "https://github.com/SzymonOrchowski/clockwise_spiral_3d_generator",
             "deployedLink": "https://3d-spiral-generator.netlify.app/",
             "imageLink": "/SpiralGenerator.jpg",
+            "releaseDate": "",
+            "visible": true
+        },
+        {
+            "id": 7,
+            "name": "Playable city generator",
+            "subheading": "Made in three.js",
+            "description": "This is an alpha version of a game application that procedurally generates a city map and allows users to explore it by moving a car using keyboard and keys W S A D. Still in early development stage so far.",
+            "repoLink": "https://github.com/SzymonOrchowski/Procedural-City-Generator",
+            "deployedLink": "https://procedural-city-generator.netlify.app",
+            "imageLink": "/CityGenerator.jpg",
             "releaseDate": "",
             "visible": true
         }
