@@ -76,6 +76,18 @@
             "imageLink": "/CityGenerator.jpg",
             "releaseDate": "",
             "visible": true
+        },
+        {
+            "id": 8,
+            "name": "3d bar chart",
+            "subheading": "Made in three.js",
+            "description": "This is a 3d bar chart with a feature of displaying delta (difference) to previously displayed row of data",
+            "repoLink": "https://github.com/SzymonOrchowski/three.js-charts-presentation",
+            "deployedLink": "https://cosmic-kheer-20859e.netlify.app/",
+            "imageLink": "/BarChart.jpg",
+            "releaseDate": "",
+            "visible": true
         }
     ]
 }
+
