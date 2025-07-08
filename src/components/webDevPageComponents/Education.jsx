@@ -19,8 +19,11 @@ const Education = () => {
                         Northcoders
                     </div>
                     <div id='web-dev-education-description'>
-                        The 13-weeks long full-time course covered a wide range of concepts from programming fundamentals through to back-end and front-end.
-                        The expansive curriculum gave me an opportunity to learn both functional and object-oriented programming, along with industry-standard practices such as TTD (test-driven development), pair programming, and MVC architecture.
+                        Completed an intensive, 13-week full-stack bootcamp focused on modern software development.
+                        <br/><br/>
+                        The curriculum covered everything from programming fundamentals like <strong>Object-Oriented Programming (OOP)</strong> to advanced concepts in both back-end (Node.js, Express) and front-end (React) development.
+                        <br/><br/>
+                        A strong emphasis was placed on industry best practices, including <strong>Test-Driven Development (TDD)</strong>, pair programming, and RESTful API design, culminating in hands-on experience building and deploying scalable web applications.
                     </div>
                 </div>
             </div>

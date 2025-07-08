@@ -6,52 +6,8 @@
             "subheading": "",
             "description": "This portfolio website is made in React.js with some additional usage of EmailJs and three.js frameworks and styled in CSS.",
             "repoLink": "https://github.com/SzymonOrchowski/portfolio",
-            "deployedLink": "http://www.szymonorchowski.co.uk",
+            "deployedLink": "https://szymonorchowski-website.netlify.app/",
             "imageLink": "/PortfolioWebsiteProject.jpg",
-            "releaseDate": "",
-            "visible": true
-        },
-        {
-            "id": 2,
-            "name": "Board Games World",
-            "subheading": "Northcoders Front-end project",
-            "description": "Front-end project of a web application made in React.js / HTML / CSS, that let users exploring and interacting with data from HouseOfGames API - my previous project from Northcoders Bootcamp",
-            "repoLink": "https://github.com/SzymonOrchowski/nc-games",
-            "deployedLink": "https://nc-board-games-project.netlify.app/",
-            "imageLink": "/FrontEndProject.jpg",
-            "releaseDate": "",
-            "visible": true
-        },
-        {
-            "id": 3,
-            "name": "House of Games",
-            "subheading": "Northcoders Back-end project",
-            "description": "Back-end project focusing on methods for dealing with asynchronous programming, RESTful APIs and databases, as well as Express and SQL.",
-            "repoLink": "https://github.com/SzymonOrchowski/be-nc-board-games",
-            "deployedLink": "https://board-games-information-place.herokuapp.com/api",
-            "imageLink": "/BackEndProject.jpg",
-            "releaseDate": "",
-            "visible": true
-        },
-        {
-            "id": 4,
-            "name": "Climbly",
-            "subheading": "Northcoders Final Project",
-            "description": "A full-stack project of a mobile app, that is a personalized version of catalog / informational place of hills and mountains located across the UK. It is built in React Native, EXPO, Express.js and Firebase among other frameworks and technologies.",
-            "repoLink": "https://github.com/SzymonOrchowski/climbly",
-            "deployedLink": "",
-            "imageLink": "/Climbly.jpg",
-            "releaseDate": "",
-            "visible": true
-        },
-        {
-            "id": 5,
-            "name": "Noughts and crosses",
-            "subheading": "Made in three.js",
-            "description": "This is my attempt to make a 3d version of the Noughts and Crosses game. All of the graphics in this game are generated procedurally. It's just the alpha version now. To spawn a figure use double-click. Work in progress...",
-            "repoLink": "https://github.com/SzymonOrchowski/noughts_and_crosses_3d_game",
-            "deployedLink": "https://noughts-and-crosses-3d-game.netlify.app/",
-            "imageLink": "/NoughtsAndCrossesGame.jpg",
             "releaseDate": "",
             "visible": true
         },
@@ -83,7 +39,7 @@
             "subheading": "Made in three.js",
             "description": "This is a 3d bar chart with a feature of displaying delta (difference) to previously displayed row of data",
             "repoLink": "https://github.com/SzymonOrchowski/three.js-charts-presentation",
-            "deployedLink": "https://cosmic-kheer-20859e.netlify.app/",
+            "deployedLink": "https://3d-bar-chart.netlify.app/",
             "imageLink": "/BarChart.jpg",
             "releaseDate": "",
             "visible": true

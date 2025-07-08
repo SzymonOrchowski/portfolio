@@ -13,29 +13,32 @@ const Skills = () => {
             <div id='web-dev-skills-main'>
                 <div id='web-dev-skills-left'>
                     {useWindowDimensions().width > 800 ? 
+                        // Desktop View - Left Column
                         <ul>
-                            <li>JavaScript</li>
-                            <li>NodeJS</li>
-                            <li>ReactJS</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>SQL</li>
-                            <li>Git</li>
+                            <li>Python</li>
+                            <li>JavaScript / TypeScript</li>
+                            <li>React / Next.js</li>
+                            <li>HTML5 / CSS</li>
+                            <li>FastAPI / Express</li>
+                            <li>Plotly.js</li>
+                            <li>Git / GitHub</li>
                         </ul>
                     :
+                        // Mobile View - Top Two Lists
                         <div id='web-dev-skills-top'>
                             <div>
                                 <ul>
-                                    <li>JavaScript</li>
-                                    <li>NodeJS</li>
-                                    <li>ReactJS</li>
+                                    <li>Python</li>
+                                    <li>JavaScript / TypeScript</li>
+                                    <li>React / Next.js</li>
+                                    <li>HTML5 / CSS</li>
                                 </ul>
                             </div>
                             <div>
                                 <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>SQL</li>
+                                    <li>FastAPI / Express</li>
+                                    <li>Plotly.js</li>
+                                    <li>Git / GitHub</li>
                                 </ul>
                             </div>
                         </div>
@@ -46,31 +49,32 @@ const Skills = () => {
                 </div>
                 <div id='web-dev-skills-right'>
                     {useWindowDimensions().width > 800 ? 
+                        // Desktop View - Right Column
                         <ul>
-                            <li>expressJS</li>
-                            <li>Firebase</li>
-                            <li>Jest</li>
-                            <li>PostgreSQL</li>
-                            <li>Mocha</li>
-                            <li>three.js</li>
-                            <li>npm</li>
+                            <li>AWS / GCP</li>
+                            <li>Docker</li>
+                            <li>PostgreSQL / TimescaleDB</li>
+                            <li>MongoDB</li>
+                            <li>QdrantDB</li>
+                            <li>MLOps / Data & AI Tools</li>
+                            <li>Agile / Jira / Linear</li>
                         </ul>
                     :
+                        // Mobile View - Bottom Two Lists
                         <div id='web-dev-skills-top'>
                             <div>
                                 <ul>
-                                    <li>Git</li>
-                                    <li>expressJS</li>
-                                    <li>Firebase</li>
-                                    <li>Jest</li>
+                                    <li>AWS / GCP</li>
+                                    <li>Docker</li>
+                                    <li>PostgreSQL / TimescaleDB</li>
+                                    <li>MongoDB</li>
                                 </ul>
                             </div>
                             <div>
                                 <ul>
-                                    <li>PostgreSQL</li>
-                                    <li>Mocha</li>
-                                    <li>three.js</li>
-                                    <li>npm</li>
+                                    <li>QdrantDB</li>
+                                    <li>MLOps / Data & AI Tools</li>
+                                    <li>Agile / Jira / Linear</li>
                                 </ul>
                             </div>
                         </div>
